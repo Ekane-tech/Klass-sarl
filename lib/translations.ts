@@ -443,6 +443,5 @@ export const company = {
   email: "Klasssarl@yahoo.com",
   emailHref: "mailto:Klasssarl@yahoo.com",
   address: "BP 713 Edéa, Cameroun",
-  hours: "Lun – Sam : 7h30 – 19h",
   city: "Edéa, Littoral, Cameroun",
 };

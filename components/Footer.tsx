@@ -116,7 +116,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                <span>{company.hours}</span>
+                <span>{t.topbar.hours}</span>
               </li>
             </ul>
           </div>
@@ -126,7 +126,6 @@ export function Footer() {
           <p>
             © {year} {company.name}. {t.footer.rights}
           </p>
-          <p>{t.footer.designed}</p>
         </div>
       </div>
     </footer>
