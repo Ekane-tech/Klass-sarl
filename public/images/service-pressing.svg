@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1215"/>
+      <stop offset="1" stop-color="#232a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <circle cx="1050" cy="150" r="160" fill="#ff7a11" opacity="0.12"/>
+  <circle cx="150" cy="680" r="220" fill="#ff7a11" opacity="0.08"/>
+  <rect x="28" y="28" width="1144" height="744" fill="none" stroke="#3a434c" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="600" y="360" font-family="Arial, Helvetica, sans-serif" font-size="52" fill="#ff7a11" text-anchor="middle" font-weight="bold">KLASS SARL</text>
+  <text x="600" y="430" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#d8dde2" text-anchor="middle">Service — Pressing</text>
+  <text x="600" y="480" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#8a93a0" text-anchor="middle">Replace with real image (1200 &times; 800)</text>
+  <text x="600" y="520" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5b6570" text-anchor="middle">/public/images/service-pressing.svg</text>
+</svg>
