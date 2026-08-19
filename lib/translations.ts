@@ -38,7 +38,7 @@ const fr = {
   intro: {
     eyebrow: "Bienvenue chez Klass Sarl",
     title: "Une entreprise, plusieurs métiers",
-    p1: "Klass Sarl est une entreprise familiale implantée à Edéa, dans le Littoral du Cameroun. Nous fédérons plusieurs petites entreprises sous un même standard de qualité et de confiance.",
+    p1: "Klass Sarl est une entreprise implantée à Edéa, dans le Littoral du Cameroun. Nous fédérons plusieurs petites entreprises sous un même standard de qualité et de confiance.",
     p2: "D'un côté, Klass Pressing prend soin de votre linge. De l'autre, notre atelier de métallerie conçoit et fabrique des ouvrages métalliques robustes : soudure, portails, garde-corps, barreaux et structures métalliques.",
     featureList: [
       "Entretien de vêtements et de linge",
@@ -82,6 +82,13 @@ const fr = {
     ctaTitle: "Un projet à réaliser ?",
     ctaSubtitle: "Décrivez-nous votre besoin, nous vous proposons une solution sur mesure.",
     ctaButton: "Demander un devis",
+    pressingPoints: [
+      "Lavage et nettoyage du linge",
+      "Repassage professionnel",
+      "Pliage soigné et emballage",
+      "Reprise rapide",
+      "Entretien de vêtements délicats",
+    ],
   },
   why: {
     eyebrow: "Pourquoi nous choisir",
@@ -166,13 +173,12 @@ const fr = {
     title: "Contactez Klass Sarl",
     subtitle: "Nous sommes à votre écoute pour tous vos projets de pressing et de métallerie.",
     addressLabel: "Adresse",
-    address: "BP 713, Edéa — Littoral, Cameroun",
+    address: "Rond point quartier Damour, Edéa — Littoral, Cameroun",
     phoneLabel: "Téléphone",
     emailLabel: "Email",
     hoursLabel: "Horaires",
     hours: "Lundi – Samedi : 7h30 – 19h",
-    mapLabel: "Edéa, Cameroun",
-    mapNote: "Carte de localisation (à brancher sur Google Maps)",
+    mapLabel: "Rond point quartier Damour",
   },
   aboutPage: {
     title: "À propos de Klass Sarl",
@@ -242,7 +248,7 @@ const en: typeof fr = {
     stats: [
       { value: "2", label: "Areas of activity" },
       { value: "+10", label: "Years of experience" },
-      { value: "100%", label: "Made to order" },
+      { value: "100%", label: "Custom made" },
     ],
   },
   intro: {
@@ -292,6 +298,13 @@ const en: typeof fr = {
     ctaTitle: "A project in mind?",
     ctaSubtitle: "Tell us what you need and we will offer you a made-to-order solution.",
     ctaButton: "Request a quote",
+    pressingPoints: [
+      "Washing and laundry cleaning",
+      "Professional ironing",
+      "Careful folding and packaging",
+      "Fast turnaround",
+      "Care of delicate garments",
+    ],
   },
   why: {
     eyebrow: "Why choose us",
@@ -376,17 +389,16 @@ const en: typeof fr = {
     title: "Contact Klass Sarl",
     subtitle: "We are here for all your pressing and metalwork projects.",
     addressLabel: "Address",
-    address: "BP 713, Edea — Littoral, Cameroon",
+    address: "Rond point quartier Damour, Edea — Littoral, Cameroon",
     phoneLabel: "Phone",
     emailLabel: "Email",
     hoursLabel: "Opening hours",
     hours: "Monday – Saturday: 7:30 am – 7 pm",
-    mapLabel: "Edea, Cameroon",
-    mapNote: "Location map (to connect to Google Maps)",
+    mapLabel: "Rond point quartier Damour",
   },
   aboutPage: {
     title: "About Klass Sarl",
-    subtitle: "An Edea company that brings local crafts together.",
+    subtitle: "A company that brings local crafts together.",
     storyEyebrow: "Our story",
     storyTitle: "Born in Edea, serving the Littoral",
     storyP1:
@@ -427,7 +439,9 @@ export const defaultLang: Lang = "fr";
 export const company = {
   name: "Klass Sarl",
   phones: ["+237 699 84 84 50", "+237 690 76 08 85", "+237 682 34 80 87"],
-  phoneHrefs: ["tel:+237699848450", "tel:+237690760885", "tel:+237682348087"],
+  phoneHrefs: ["https://wa.me/237699848450", "https://wa.me/237690760885", "https://wa.me/237682348087"],
+  pressingPhone: "+237 682 34 80 87",
+  pressingPhoneHref: "https://wa.me/237682348087",
   email: "Klasssarl@yahoo.com",
   emailHref: "mailto:Klasssarl@yahoo.com",
   address: "BP 713 Edéa, Cameroun",

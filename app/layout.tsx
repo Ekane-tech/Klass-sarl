@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import { I18nProvider } from "@/lib/i18n";
 import { company } from "@/lib/translations";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://klass-sarl.example.com"),
@@ -38,7 +53,7 @@ export const metadata: Metadata = {
       "Pressing, métallerie, soudure, portails et structures métalliques sur mesure à Edéa, Cameroun.",
     images: [
       {
-        url: "/images/og.svg",
+        url: "/images/klass-sarl-logo.png",
         width: 1200,
         height: 630,
         alt: "Klass Sarl — Pressing & Métallerie à Edéa",
@@ -50,7 +65,7 @@ export const metadata: Metadata = {
     title: "Klass Sarl — Pressing & Métallerie à Edéa",
     description:
       "Pressing, métallerie, soudure, portails et structures métalliques sur mesure à Edéa, Cameroun.",
-    images: ["/images/og.svg"],
+    images: ["/images/klass-sarl-logo.png"],
   },
   robots: {
     index: true,
@@ -87,7 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="fr" className="antialiased">
+    <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
       <body className="flex min-h-screen flex-col">
         <script
           type="application/ld+json"
@@ -95,8 +110,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <I18nProvider>
           <Header />
-          <main className="flex-1">{children}</main>
+          <PageTransition>
+            <main className="flex-1">{children}</main>
+          </PageTransition>
           <Footer />
+          <ScrollToTop />
         </I18nProvider>
       </body>
     </html>

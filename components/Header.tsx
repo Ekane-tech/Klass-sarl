@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
 import { company } from "@/lib/translations";
 import { Logo, MenuIcon, CloseIcon, GlobeIcon, PhoneIcon, PinIcon } from "./icons";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function Header() {
   const { lang, toggleLang, t } = useI18n();
@@ -120,42 +121,58 @@ export function Header() {
         </div>
 
         {/* Mobile menu */}
-        {open && (
-          <nav
-            className="border-t border-ink-100 bg-white px-4 py-3 lg:hidden"
-            aria-label="Menu mobile"
-          >
-            <ul className="flex flex-col gap-1">
-              {links.map((l) => {
-                const active = l.key === "home" ? pathname === "/" : pathname.startsWith(l.href);
-                return (
-                  <li key={l.key}>
-                    <Link
-                      href={l.href}
-                      onClick={() => setOpen(false)}
-                      className={`block rounded-lg px-4 py-3 text-base font-medium transition ${
-                        active
-                          ? "bg-ink-900 text-white"
-                          : "text-ink-700 hover:bg-ink-50"
-                      }`}
+        <AnimatePresence>
+          {open && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="border-t border-ink-100 bg-white overflow-hidden lg:hidden"
+              aria-label="Menu mobile"
+            >
+              <ul className="flex flex-col gap-1 px-4 py-3">
+                {links.map((l, index) => {
+                  const active = l.key === "home" ? pathname === "/" : pathname.startsWith(l.href);
+                  return (
+                    <motion.li
+                      key={l.key}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
                     >
-                      {l.label}
-                    </Link>
-                  </li>
-                );
-              })}
-              <li className="mt-2">
-                <a
-                  href={company.phoneHrefs[0]}
-                  className="flex items-center justify-center gap-2 rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold text-white"
+                      <Link
+                        href={l.href}
+                        onClick={() => setOpen(false)}
+                        className={`block rounded-lg px-4 py-3 text-base font-medium transition ${
+                          active
+                            ? "bg-ink-900 text-white"
+                            : "text-ink-700 hover:bg-ink-50"
+                        }`}
+                      >
+                        {l.label}
+                      </Link>
+                    </motion.li>
+                  );
+                })}
+                <motion.li
+                  className="mt-2"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: links.length * 0.05 }}
                 >
-                  <PhoneIcon className="h-4 w-4" />
-                  {t.nav.callUs}
-                </a>
-              </li>
-            </ul>
-          </nav>
-        )}
+                  <a
+                    href={company.phoneHrefs[0]}
+                    className="flex items-center justify-center gap-2 rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold text-white"
+                  >
+                    <PhoneIcon className="h-4 w-4" />
+                    {t.nav.callUs}
+                  </a>
+                </motion.li>
+              </ul>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
