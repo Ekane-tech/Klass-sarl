@@ -57,14 +57,14 @@ const fr = {
     items: [
       {
         key: "pressing",
-        icon: "🧺",
+        icon: "shirt",
         title: "Klass Pressing",
         desc: "Lavage, repassage et entretien du linge et des vêtements. Reprise rapide et soin attentif de vos tissus.",
         image: "/images/service-pressing.svg",
       },
       {
         key: "workshop",
-        icon: "🔩",
+        icon: "wrench",
         title: "Atelier Métallerie",
         desc: "Soudure et fabrication métallique : portails, garde-corps, barreaux, structures métalliques et ouvrages sur mesure.",
         image: "/images/service-welding.svg",
@@ -73,10 +73,10 @@ const fr = {
     workshopSub: {
       title: "L'atelier, en détail",
       items: [
-        { icon: "⚙️", title: "Soudure & assemblage", desc: "Soudure à l'arc et à l'électrode pour un résultat solide et durable." },
-        { icon: "🚪", title: "Portails & grilles", desc: "Portails coulissants ou battants, grilles de sécurité sur mesure." },
-        { icon: "🪟", title: "Garde-corps & barreaux", desc: "Protection des fenêtres, balcons et escaliers, élégante et sûre." },
-        { icon: "🏗️", title: "Structures métalliques", desc: "Charpentes, ossatures et supports pour bâtiments et équipements." },
+        { icon: "wrench", title: "Soudure & assemblage", desc: "Soudure à l'arc et à l'électrode pour un résultat solide et durable." },
+        { icon: "door", title: "Portails & grilles", desc: "Portails coulissants ou battants, grilles de sécurité sur mesure." },
+        { icon: "grid", title: "Garde-corps & barreaux", desc: "Protection des fenêtres, balcons et escaliers, élégante et sûre." },
+        { icon: "building", title: "Structures métalliques", desc: "Charpentes, ossatures et supports pour bâtiments et équipements." },
       ],
     },
     ctaTitle: "Un projet à réaliser ?",
@@ -88,10 +88,10 @@ const fr = {
     title: "L'exigence du travail bien fait",
     subtitle: "Des valeurs simples qui font la différence au quotidien.",
     items: [
-      { icon: "🛠️", title: "Qualité durable", desc: "Des matériaux et un savoir-faire qui tiennent dans le temps." },
-      { icon: "⏱️", title: "Respect des délais", desc: "Nous nous engageons sur des dates et nous les tenons." },
-      { icon: "🤝", title: "Prix justes", desc: "Des devis clairs et honnêtes, sans mauvaise surprise." },
-      { icon: "📍", title: "Proche de vous", desc: "Basés à Edéa, nous servons toute la région du Littoral." },
+      { icon: "hammer", title: "Qualité durable", desc: "Des matériaux et un savoir-faire qui tiennent dans le temps." },
+      { icon: "timer", title: "Respect des délais", desc: "Nous nous engageons sur des dates et nous les tenons." },
+      { icon: "handshake", title: "Prix justes", desc: "Des devis clairs et honnêtes, sans mauvaise surprise." },
+      { icon: "map-pin", title: "Proche de vous", desc: "Basés à Edéa, nous servons toute la région du Littoral." },
     ],
   },
   process: {
@@ -186,9 +186,9 @@ const fr = {
     missionEyebrow: "Notre mission",
     missionTitle: "Ce qui nous anime",
     missionItems: [
-      { icon: "🎯", title: "Notre mission", desc: "Offrir des prestations de qualité accessibles, réalisées par des artisans locaux passionnés." },
-      { icon: "💡", title: "Notre vision", desc: "Faire rayonner le savoir-faire d'Edéa et devenir une référence régionale du pressing et de la métallerie." },
-      { icon: "🤝", title: "Nos valeurs", desc: "Honnêteté, ponctualité, respect du client et qualité du travail." },
+      { icon: "target", title: "Notre mission", desc: "Offrir des prestations de qualité accessibles, réalisées par des artisans locaux passionnés." },
+      { icon: "lightbulb", title: "Notre vision", desc: "Faire rayonner le savoir-faire d'Edéa et devenir une référence régionale du pressing et de la métallerie." },
+      { icon: "handshake", title: "Nos valeurs", desc: "Honnêteté, ponctualité, respect du client et qualité du travail." },
     ],
     locationsEyebrow: "Où sommes-nous ?",
     locationsTitle: "Au cœur d'Edéa, Littoral",
@@ -267,14 +267,14 @@ const en: typeof fr = {
     items: [
       {
         key: "pressing",
-        icon: "🧺",
+        icon: "shirt",
         title: "Klass Pressing",
         desc: "Washing, ironing and care for clothes and linen. Fast turnaround and attentive treatment of your fabrics.",
         image: "/images/service-pressing.svg",
       },
       {
         key: "workshop",
-        icon: "🔩",
+        icon: "wrench",
         title: "Metalwork Workshop",
         desc: "Welding and metal fabrication: gates, railings, window bars, metal structures and made-to-order pieces.",
         image: "/images/service-welding.svg",
@@ -283,10 +283,10 @@ const en: typeof fr = {
     workshopSub: {
       title: "The workshop, in detail",
       items: [
-        { icon: "⚙️", title: "Welding & assembly", desc: "Arc and stick welding for a strong, lasting result." },
-        { icon: "🚪", title: "Gates & grilles", desc: "Sliding or swinging gates and security grilles made to order." },
-        { icon: "🪟", title: "Railings & window bars", desc: "Protection for windows, balconies and stairs — elegant and safe." },
-        { icon: "🏗️", title: "Metal structures", desc: "Frames, frameworks and supports for buildings and equipment." },
+        { icon: "wrench", title: "Welding & assembly", desc: "Arc and stick welding for a strong, lasting result." },
+        { icon: "door", title: "Gates & grilles", desc: "Sliding or swinging gates and security grilles made to order." },
+        { icon: "grid", title: "Railings & window bars", desc: "Protection for windows, balconies and stairs — elegant and safe." },
+        { icon: "building", title: "Metal structures", desc: "Frames, frameworks and supports for buildings and equipment." },
       ],
     },
     ctaTitle: "A project in mind?",
@@ -298,10 +298,10 @@ const en: typeof fr = {
     title: "The standard of a job well done",
     subtitle: "Simple values that make all the difference every day.",
     items: [
-      { icon: "🛠️", title: "Lasting quality", desc: "Materials and craftsmanship that stand the test of time." },
-      { icon: "⏱️", title: "On-time delivery", desc: "We commit to dates and we meet them." },
-      { icon: "🤝", title: "Fair prices", desc: "Clear, honest quotes with no surprises." },
-      { icon: "📍", title: "Close to you", desc: "Based in Edea, we serve the whole Littoral region." },
+      { icon: "hammer", title: "Lasting quality", desc: "Materials and craftsmanship that stand the test of time." },
+      { icon: "timer", title: "On-time delivery", desc: "We commit to dates and we meet them." },
+      { icon: "handshake", title: "Fair prices", desc: "Clear, honest quotes with no surprises." },
+      { icon: "map-pin", title: "Close to you", desc: "Based in Edea, we serve the whole Littoral region." },
     ],
   },
   process: {
@@ -396,9 +396,9 @@ const en: typeof fr = {
     missionEyebrow: "Our mission",
     missionTitle: "What drives us",
     missionItems: [
-      { icon: "🎯", title: "Our mission", desc: "To offer quality, accessible services carried out by passionate local craftspeople." },
-      { icon: "💡", title: "Our vision", desc: "To showcase Edea's craft skills and become a regional reference in pressing and metalwork." },
-      { icon: "🤝", title: "Our values", desc: "Honesty, punctuality, respect for the client and quality of work." },
+      { icon: "target", title: "Our mission", desc: "To offer quality, accessible services carried out by passionate local craftspeople." },
+      { icon: "lightbulb", title: "Our vision", desc: "To showcase Edea's craft skills and become a regional reference in pressing and metalwork." },
+      { icon: "handshake", title: "Our values", desc: "Honesty, punctuality, respect for the client and quality of work." },
     ],
     locationsEyebrow: "Where are we?",
     locationsTitle: "In the heart of Edea, Littoral",

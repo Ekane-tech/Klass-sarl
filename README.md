@@ -2,8 +2,8 @@
 
 Professional website for **Klass Sarl**, a company based in **Edéa (Littoral, Cameroon)** that brings together several small businesses:
 
-- **🧺 Klass Pressing** — laundry washing, ironing and garment care
-- **🔩 Metalwork Workshop** — welding, metal fabrication, gates, window bars, railings and metal structures
+- **Klass Pressing** — laundry washing, ironing and garment care
+- **Metalwork Workshop** — welding, metal fabrication, gates, window bars, railings and metal structures
 
 Built with **Next.js (App Router)**, **React 19** and **Tailwind CSS v4**. Fully responsive and SEO-optimized (metadata, Open Graph, JSON-LD, sitemap, robots).
 

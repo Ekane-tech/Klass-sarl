@@ -5,6 +5,7 @@ import { Img } from "@/components/Img";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Cta } from "@/components/Cta";
 import { CheckIcon } from "@/components/icons";
+import { DynamicIcon } from "@/components/DynamicIcon";
 
 export function ServicesContent() {
   const { t } = useI18n();
@@ -43,8 +44,9 @@ export function ServicesContent() {
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
           <div>
-            <span className="mb-3 inline-block rounded-full bg-brand-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-700">
-              {t.services.items[0].icon} {t.services.items[0].title}
+            <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-700">
+              <DynamicIcon name={t.services.items[0].icon} className="h-4 w-4" />
+              {t.services.items[0].title}
             </span>
             <h2 className="font-display text-3xl font-bold text-ink-900 sm:text-4xl">
               {t.services.items[0].title}
@@ -68,15 +70,15 @@ export function ServicesContent() {
       <section id="workshop" className="scroll-mt-24 bg-ink-50 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading
-            eyebrow={`${t.services.items[1].icon} ${t.services.items[1].title}`}
+            eyebrow={t.services.items[1].title}
             title={t.services.workshopSub.title}
             subtitle={t.services.items[1].desc}
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.services.workshopSub.items.map((w) => (
               <div key={w.title} className="rounded-3xl border border-ink-100 bg-white p-6">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-2xl">
-                  {w.icon}
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600">
+                  <DynamicIcon name={w.icon} className="h-6 w-6" />
                 </span>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900">{w.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-ink-500">{w.desc}</p>

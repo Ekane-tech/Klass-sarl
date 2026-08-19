@@ -5,7 +5,7 @@ import { useI18n } from "@/lib/i18n";
 import type { Post } from "@/lib/posts";
 import { posts } from "@/lib/posts";
 import { Img } from "@/components/Img";
-import { ArrowRightIcon } from "@/components/icons";
+import { ArrowRightIcon, ArrowLeftIcon } from "@/components/icons";
 import { Cta } from "@/components/Cta";
 
 export function BlogPostContent({ post }: { post: Post }) {
@@ -21,7 +21,8 @@ export function BlogPostContent({ post }: { post: Post }) {
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <div className="flex items-center gap-3 text-xs text-ink-300">
               <Link href="/blog" className="inline-flex items-center gap-1.5 hover:text-brand-400">
-                ← {t.nav.blog}
+                <ArrowLeftIcon className="h-4 w-4" />
+                {t.nav.blog}
               </Link>
             </div>
             <span className="mt-6 inline-block rounded-full bg-brand-500/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-400">

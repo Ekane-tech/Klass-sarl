@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useI18n } from "@/lib/i18n";
 import { posts, allCategories } from "@/lib/posts";
 import { Img } from "@/components/Img";
+import { ArrowRightIcon } from "@/components/icons";
 
 export function BlogContent() {
   const { t, lang } = useI18n();
@@ -84,7 +85,8 @@ export function BlogContent() {
                     </h2>
                     <p className="mt-2 text-sm leading-6 text-ink-500">{c.excerpt}</p>
                     <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600">
-                      {t.blog.readMore} →
+                      {t.blog.readMore}
+                      <ArrowRightIcon className="h-4 w-4" />
                     </span>
                   </div>
                 </Link>

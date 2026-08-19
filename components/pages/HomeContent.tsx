@@ -6,7 +6,8 @@ import { posts } from "@/lib/posts";
 import { Img } from "@/components/Img";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Cta } from "@/components/Cta";
-import { ArrowRightIcon, CheckIcon } from "@/components/icons";
+import { ArrowRightIcon, CheckIcon, StarIcon } from "@/components/icons";
+import { DynamicIcon } from "@/components/DynamicIcon";
 
 export function HomeContent() {
   const { t, lang } = useI18n();
@@ -143,8 +144,8 @@ export function HomeContent() {
                     sizes="(min-width: 768px) 50vw, 100vw"
                     className="transition duration-300 group-hover:scale-[1.02]"
                   />
-                  <span className="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/90 text-2xl shadow">
-                    {s.icon}
+                  <span className="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/90 text-brand-600 shadow">
+                    <DynamicIcon name={s.icon} className="h-6 w-6" />
                   </span>
                 </div>
                 <div className="p-6 sm:p-7">
@@ -180,8 +181,8 @@ export function HomeContent() {
                 key={w.title}
                 className="rounded-3xl border border-ink-700 bg-ink-800 p-6 transition hover:border-brand-500/60"
               >
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-2xl">
-                  {w.icon}
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400">
+                  <DynamicIcon name={w.icon} className="h-6 w-6" />
                 </span>
                 <h3 className="mt-4 font-display text-lg font-bold">{w.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-ink-300">{w.desc}</p>
@@ -205,7 +206,9 @@ export function HomeContent() {
                 key={w.title}
                 className="rounded-3xl border border-ink-100 bg-ink-50 p-6 text-center"
               >
-                <span className="text-4xl">{w.icon}</span>
+                <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-600">
+                  <DynamicIcon name={w.icon} className="h-7 w-7" />
+                </span>
                 <h3 className="mt-4 font-display text-lg font-bold text-ink-900">{w.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-ink-500">{w.desc}</p>
               </div>
@@ -239,8 +242,10 @@ export function HomeContent() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {t.testimonials.items.map((tm) => (
               <figure key={tm.name} className="rounded-3xl border border-ink-100 bg-ink-50 p-7">
-                <div className="text-brand-500" aria-hidden>
-                  {"★★★★★"}
+                <div className="flex gap-1 text-brand-500" aria-label="5 sur 5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <StarIcon key={i} className="h-5 w-5" fill="currentColor" strokeWidth={0} />
+                  ))}
                 </div>
                 <blockquote className="mt-4 text-ink-700">“{tm.quote}”</blockquote>
                 <figcaption className="mt-5 border-t border-ink-100 pt-4">

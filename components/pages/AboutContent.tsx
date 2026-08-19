@@ -6,6 +6,7 @@ import { Img } from "@/components/Img";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Cta } from "@/components/Cta";
 import { ArrowRightIcon, PinIcon } from "@/components/icons";
+import { DynamicIcon } from "@/components/DynamicIcon";
 
 export function AboutContent() {
   const { t } = useI18n();
@@ -73,8 +74,8 @@ export function AboutContent() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {t.aboutPage.missionItems.map((m) => (
               <div key={m.title} className="rounded-3xl border border-ink-100 bg-white p-7 text-center">
-                <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-3xl">
-                  {m.icon}
+                <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-600">
+                  <DynamicIcon name={m.icon} className="h-7 w-7" />
                 </span>
                 <h3 className="mt-5 font-display text-xl font-bold text-ink-900">{m.title}</h3>
                 <p className="mt-3 leading-7 text-ink-500">{m.desc}</p>

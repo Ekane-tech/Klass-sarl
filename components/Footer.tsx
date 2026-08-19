@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { company } from "@/lib/translations";
-import { Logo, PhoneIcon, MailIcon, PinIcon, ClockIcon, ArrowRightIcon } from "./icons";
+import { Logo, PhoneIcon, MailIcon, PinIcon, ClockIcon, ArrowRightIcon, SparklesIcon } from "./icons";
 
 export function Footer() {
   const { t } = useI18n();
@@ -37,7 +37,10 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm leading-6">{t.footer.about}</p>
-            <p className="mt-4 text-xs text-ink-400">✦ {t.footer.madeIn}</p>
+            <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-ink-400">
+              <SparklesIcon className="h-3.5 w-3.5 text-brand-500" />
+              {t.footer.madeIn}
+            </p>
           </div>
 
           {/* Quick links */}
