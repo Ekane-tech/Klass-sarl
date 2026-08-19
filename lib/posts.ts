@@ -76,7 +76,7 @@ export const posts: Post[] = [
         "Which material? Steel is sturdy, economical and easy to paint. Aluminium is lighter and does not rust, but costs more.",
         "Think about automation. A good motor (with obstacle detection) makes daily use easier and improves security.",
         "Call in a professional for installation. A well-welded, well-anchored structure lasts for decades.",
-        "Our Edea workshop builds made-to-order sliding and swinging gates. We advise you on the best model and material.",
+        "Our Edea workshop builds custom made sliding and swinging gates. We advise you on the best model and material.",
       ],
     },
   },

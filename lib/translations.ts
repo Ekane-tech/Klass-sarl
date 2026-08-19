@@ -142,7 +142,6 @@ const fr = {
     servicesTitle: "Services",
     contactTitle: "Contact",
     rights: "Tous droits réservés.",
-    designed: "Site réalisé avec Next.js",
     madeIn: "Fait avec fierté à Edéa, Cameroun",
   },
   form: {
@@ -220,7 +219,7 @@ const en: typeof fr = {
   meta: {
     title: "Klass Sarl — Pressing & Metalwork in Edea",
     description:
-      "Klass Sarl brings together several small businesses in Edea (Littoral, Cameroon): Klass Pressing for laundry care and a metalwork workshop offering welding, gates, railings and custom metal structures. Quality, reliability and made-to-order work.",
+      "Klass Sarl brings together several small businesses in Edea (Littoral, Cameroon): Klass Pressing for laundry care and a metalwork workshop offering welding, gates, railings and custom metal structures. Quality, reliability and custom made work.",
   },
   nav: {
     home: "Home",
@@ -241,7 +240,7 @@ const en: typeof fr = {
     titleHighlight: "heart of Edea",
     titleB: "",
     subtitle:
-      "Klass Sarl brings together Klass Pressing and a metalwork workshop. We combine local craftsmanship for clean, sturdy, made-to-order work.",
+      "Klass Sarl brings together Klass Pressing and a metalwork workshop. We combine local craftsmanship for clean, sturdy, custom made work.",
     ctaPrimary: "Explore our services",
     ctaSecondary: "Contact us",
     imageLabel: "The Klass Sarl workshop",
@@ -282,7 +281,7 @@ const en: typeof fr = {
         key: "workshop",
         icon: "wrench",
         title: "Metalwork Workshop",
-        desc: "Welding and metal fabrication: gates, railings, window bars, metal structures and made-to-order pieces.",
+        desc: "Welding and metal fabrication: gates, railings, window bars, metal structures and custom made pieces.",
         image: "/images/service-welding.svg",
       },
     ],
@@ -296,7 +295,7 @@ const en: typeof fr = {
       ],
     },
     ctaTitle: "A project in mind?",
-    ctaSubtitle: "Tell us what you need and we will offer you a made-to-order solution.",
+    ctaSubtitle: "Tell us what you need and we will offer you a custom made solution.",
     ctaButton: "Request a quote",
     pressingPoints: [
       "Washing and laundry cleaning",
@@ -358,7 +357,6 @@ const en: typeof fr = {
     servicesTitle: "Services",
     contactTitle: "Contact",
     rights: "All rights reserved.",
-    designed: "Website built with Next.js",
     madeIn: "Proudly made in Edea, Cameroon",
   },
   form: {
@@ -404,7 +402,7 @@ const en: typeof fr = {
     storyP1:
       "Klass Sarl was born from a belief: bringing several small trades together under one company to offer reliable services with no middlemen. Based in Edea, in the Sanaga-Maritime division (Littoral), it serves individuals, shops and businesses.",
     storyP2:
-      "Today, Klass Sarl is organized around two areas: Klass Pressing for laundry care, and a metalwork workshop for welding and the fabrication of made-to-order metal pieces.",
+      "Today, Klass Sarl is organized around two areas: Klass Pressing for laundry care, and a metalwork workshop for welding and the fabrication of custom made metal pieces.",
     missionEyebrow: "Our mission",
     missionTitle: "What drives us",
     missionItems: [
