@@ -27,22 +27,22 @@ export function Footer() {
   return (
     <footer className="bg-ink-900 text-ink-300">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center gap-2.5">
-              <Logo className="h-10 w-10" />
-              <span className="font-display text-lg font-bold text-white">
-                Klass<span className="text-brand-400"> Sarl</span>
-              </span>
-            </Link>
-            <p className="mt-4 text-sm leading-6">{t.footer.about}</p>
-            <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-ink-400">
-              <SparklesIcon className="h-3.5 w-3.5 text-brand-500" />
-              {t.footer.madeIn}
-            </p>
-          </div>
+        {/* Brand */}
+        <div className="mb-10">
+          <Link href="/" className="flex items-center gap-2.5">
+            <Logo className="h-10 w-10" />
+            <span className="font-display text-lg font-bold text-white">
+              Klass<span className="text-brand-400"> Sarl</span>
+            </span>
+          </Link>
+          <p className="mt-4 text-sm leading-6">{t.footer.about}</p>
+          <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-ink-400">
+            <SparklesIcon className="h-3.5 w-3.5 text-brand-500" />
+            {t.footer.madeIn}
+          </p>
+        </div>
 
+        <div className="grid gap-10 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           {/* Quick links */}
           <div>
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
@@ -84,7 +84,7 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
               {t.footer.contactTitle}
             </h3>
