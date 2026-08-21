@@ -1,4 +1,3 @@
-import type { SVGProps } from "react";
 import {
   Phone as PhoneIcon,
   Mail as MailIcon,

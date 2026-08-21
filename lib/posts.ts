@@ -14,7 +14,7 @@ export const posts: Post[] = [
     slug: "conseils-entretien-pressing",
     date: "2026-07-18",
     category: "Pressing",
-    image: "/images/blog-pressing.svg",
+    image: "/images/blog-pressing.jpg",
     fr: {
       title: "5 conseils pour bien entretenir votre linge à la maison",
       excerpt:
@@ -50,7 +50,7 @@ export const posts: Post[] = [
     slug: "choisir-bon-portail",
     date: "2026-07-02",
     category: "Métallerie",
-    image: "/images/blog-metal.svg",
+    image: "/images/blog-metal.jpg",
     fr: {
       title: "Comment choisir le bon portail pour votre maison",
       excerpt:
@@ -84,7 +84,7 @@ export const posts: Post[] = [
     slug: "soudure-fabrications-sur-mesure",
     date: "2026-06-14",
     category: "Métallerie",
-    image: "/images/blog-welding.svg",
+    image: "/images/blog-welding.jpg",
     fr: {
       title: "Soudure et fabrications métalliques : que pouvez-vous commander ?",
       excerpt:
@@ -118,7 +118,7 @@ export const posts: Post[] = [
     slug: "entretenir-ouvrages-metalliques",
     date: "2026-05-28",
     category: "Entretien",
-    image: "/images/blog-care.svg",
+    image: "/images/blog-care.jpg",
     fr: {
       title: "Entretenir vos ouvrages métalliques pour les faire durer",
       excerpt:
@@ -152,7 +152,7 @@ export const posts: Post[] = [
     slug: "entretien-gardes-corps-balcons",
     date: "2026-05-09",
     category: "Pressing",
-    image: "/images/blog-pressing.svg",
+    image: "/images/blog-pressing.jpg",
     fr: {
       title: "Repassage professionnel : gagnez du temps chaque semaine",
       excerpt:

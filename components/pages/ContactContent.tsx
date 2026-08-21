@@ -43,7 +43,7 @@ export function ContactContent() {
       <section className="relative overflow-hidden bg-ink-900 py-16 text-white sm:py-20">
         <div className="absolute inset-0">
           <Img
-            src="/images/contact-hero.svg"
+            src="/images/contact-hero.jpg"
             alt={t.contactPage.title}
             aspect="auto"
             className="h-full w-full opacity-30"
@@ -117,7 +117,7 @@ export function ContactContent() {
               <FadeIn>
                 <div className="overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm">
                   <Img
-                    src="/images/hero-pressing.svg"
+                    src="/images/hero-pressing.jpg"
                     alt={t.contactPage.mapLabel}
                     aspect="4/3"
                     className="border-b border-ink-100"

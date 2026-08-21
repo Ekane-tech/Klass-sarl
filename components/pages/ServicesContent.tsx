@@ -39,7 +39,7 @@ export function ServicesContent() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
           <SlideIn direction="left">
             <Img
-              src="/images/pressing-interior.svg"
+              src="/images/pressing-interior.jpg"
               alt={t.services.items[0].title}
               aspect="4/3"
               className="rounded-3xl shadow-xl"
@@ -131,7 +131,7 @@ export function ServicesContent() {
           </StaggerContainer>
 
           <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-3">
-            {["/images/service-welding.svg", "/images/service-gates.svg", "/images/service-window-bars.svg"].map(
+            {["/images/service-welding.jpg", "/images/service-gates.jpg", "/images/service-window-bars.jpg"].map(
               (src, i) => (
                 <StaggerItem key={src}>
                   <Img

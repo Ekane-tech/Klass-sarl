@@ -60,14 +60,14 @@ const fr = {
         icon: "shirt",
         title: "Klass Pressing",
         desc: "Lavage, repassage et entretien du linge et des vêtements. Reprise rapide et soin attentif de vos tissus.",
-        image: "/images/service-pressing.svg",
+        image: "/images/service-pressing.jpg",
       },
       {
         key: "workshop",
         icon: "wrench",
         title: "Atelier Métallerie",
         desc: "Soudure et fabrication métallique : portails, garde-corps, barreaux, structures métalliques et ouvrages sur mesure.",
-        image: "/images/service-welding.svg",
+        image: "/images/service-welding.jpg",
       },
     ],
     workshopSub: {
@@ -275,14 +275,14 @@ const en: typeof fr = {
         icon: "shirt",
         title: "Klass Pressing",
         desc: "Washing, ironing and care for clothes and linen. Fast turnaround and attentive treatment of your fabrics.",
-        image: "/images/service-pressing.svg",
+        image: "/images/service-pressing.jpg",
       },
       {
         key: "workshop",
         icon: "wrench",
         title: "Metalwork Workshop",
         desc: "Welding and metal fabrication: gates, railings, window bars, metal structures and custom made pieces.",
-        image: "/images/service-welding.svg",
+        image: "/images/service-welding.jpg",
       },
     ],
     workshopSub: {

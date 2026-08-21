@@ -34,22 +34,27 @@ npm run start
 
 The site is **bilingual (French / English)** — use the **FR / EN** toggle in the header. The choice is remembered in the browser.
 
-## 🖼️ Replacing placeholder images
+## 🖼️ Images
 
-Every photo is a placeholder located in **`public/images/`** (SVG files that look like the photo slot). To use real photos, simply drop your images into `public/images/` **with the same file name** (or edit the `src` in the code — the `Img` component is used everywhere, see `components/Img.tsx`).
+Real, relevant photos are stored in **`public/images/`** as `.jpg` files, referenced through the `Img` component (a `next/image` wrapper — see `components/Img.tsx`). The brand logo is `public/images/klass-sarl-logo.png`.
 
-Main placeholders:
+To use the company's own photos later, just replace the matching file in `public/images/` (keep the same name) or change the `src` in the code.
 
-| File | Where it appears |
-| ---- | ---------------- |
-| `hero-workshop.svg` | Home hero background |
-| `hero-pressing.svg` | Contact page (map slot) |
-| `about.svg`, `team.svg` | Home intro, About page |
-| `service-*.svg` | Service cards |
-| `pressing-interior.svg` | Services page (pressing) |
-| `workshop-interior.svg` | Services / About pages |
-| `blog-*.svg` | Blog article covers |
-| `og.svg` | Social share / Open Graph image |
+| File | Where it appears | Content |
+| ---- | ---------------- | ------- |
+| `hero-workshop.jpg` | Home hero background | Man welding steel construction |
+| `contact-hero.jpg` | Contact page hero | Welding sparks |
+| `hero-pressing.jpg` | Contact page (map slot) | Neat laundry after pressing |
+| `about.jpg`, `team.jpg` | Home intro, About page | Craftsmen in the workshop |
+| `service-pressing.jpg` | Services / home cards | Bright laundry |
+| `service-welding.jpg` | Services card | Arc welder at work |
+| `service-gates.jpg` | Services card | Wrought-iron gate |
+| `service-window-bars.jpg` | Services card | Window security grille |
+| `pressing-interior.jpg` | Services page (pressing) | Professional ironing |
+| `workshop-interior.jpg` | Services / About pages | Metalwork workshop |
+| `blog-*.jpg` | Blog article covers | Laundry, welding, gates, steel care |
+
+> Note: these are suitable stock-style photos chosen as fillers. Swap in real photos of Klass Sarl's pressing shop and workshop before public launch.
 
 ## ✉️ Contact form (making it actually send email)
 

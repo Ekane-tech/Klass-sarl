@@ -19,7 +19,7 @@ export function HomeContent() {
       <section className="relative overflow-hidden bg-ink-900 text-white">
         <div className="absolute inset-0">
           <Img
-            src="/images/hero-workshop.svg"
+            src="/images/hero-workshop.jpg"
             alt={t.hero.imageLabel}
             aspect="auto"
             className="h-full w-full opacity-40"
@@ -123,7 +123,7 @@ export function HomeContent() {
           <SlideIn direction="right">
             <div className="relative">
               <Img
-                src="/images/about.svg"
+                src="/images/about.jpg"
                 alt={t.intro.imageLabel}
                 aspect="4/3"
                 className="rounded-3xl shadow-xl"
@@ -275,7 +275,7 @@ export function HomeContent() {
                         <StarIcon key={i} className="h-5 w-5" fill="currentColor" strokeWidth={0} />
                       ))}
                     </div>
-                    <blockquote className="mt-4 text-ink-700">"{tm.quote}"</blockquote>
+                    <blockquote className="mt-4 text-ink-700">“{tm.quote}”</blockquote>
                     <figcaption className="mt-5 border-t border-ink-100 pt-4">
                       <p className="font-semibold text-ink-900">{tm.name}</p>
                       <p className="text-sm text-ink-500">{tm.role}</p>

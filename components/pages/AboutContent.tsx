@@ -67,7 +67,7 @@ export function AboutContent() {
           </SlideIn>
           <SlideIn direction="right">
             <Img
-              src="/images/team.svg"
+              src="/images/team.jpg"
               alt={t.aboutPage.imageLabel}
               aspect="4/3"
               className="rounded-3xl shadow-xl"
@@ -107,7 +107,7 @@ export function AboutContent() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
           <SlideIn direction="left">
             <Img
-              src="/images/workshop-interior.svg"
+              src="/images/workshop-interior.jpg"
               alt={t.aboutPage.locationsTitle}
               aspect="4/3"
               className="rounded-3xl shadow-xl"

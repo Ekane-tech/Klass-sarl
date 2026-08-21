@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
 import { I18nProvider } from "@/lib/i18n";
 import { company } from "@/lib/translations";
 import { Header } from "@/components/Header";
@@ -7,18 +6,6 @@ import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://klass-sarl.example.com"),
@@ -102,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
+    <html lang="fr" className="antialiased">
       <body className="flex min-h-screen flex-col">
         <script
           type="application/ld+json"
