@@ -1,11 +1,26 @@
 # Klass Sarl — Website
 
+![Next.js](https://img.shields.io/badge/Next.js-16.3-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19.2-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-13-pink?logo=framer)
+
 Professional website for **Klass Sarl**, a company based in **Edéa (Littoral, Cameroon)** that brings together several small businesses:
 
 - **Klass Pressing** — laundry washing, ironing and garment care
 - **Metalwork Workshop** — welding, metal fabrication, gates, window bars, railings and metal structures
 
-Built with **Next.js (App Router)**, **React 19** and **Tailwind CSS v4**. Fully responsive and SEO-optimized (metadata, Open Graph, JSON-LD, sitemap, robots).
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16.3 (App Router)
+- **UI Library**: React 19.2
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion 13
+- **Icons**: Lucide React
+- **Email**: Nodemailer
+- **Fonts**: @fontsource-variable (Inter, Space Grotesk)
 
 ## 🚀 Getting started
 
