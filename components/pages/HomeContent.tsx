@@ -30,7 +30,7 @@ export function HomeContent() {
           <div className="absolute inset-0 bg-linear-to-r from-ink-950 via-ink-950/60 to-ink-900/20" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-14">
+        <div className="relative mx-auto max-w-7xl px-4 py-5 sm:px-6 sm:py-5">
           <FadeIn>
             <div className="max-w-2xl">
               <SlideUp delay={0.1}>
@@ -40,7 +40,7 @@ export function HomeContent() {
                 </span>
               </SlideUp>
               <SlideUp delay={0.2}>
-                <h1 className="mt-6 font-display text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
+                <h1 className="mt-3 font-display text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
                   {t.hero.titleA}{" "}
                   <span className="text-brand-400">{t.hero.titleHighlight}</span>{" "}
                   {t.hero.titleB}
@@ -50,7 +50,7 @@ export function HomeContent() {
                 <p className="mt-6 max-w-xl text-lg leading-8 text-ink-200">{t.hero.subtitle}</p>
               </SlideUp>
               <SlideUp delay={0.4}>
-                <div className="mt-8 flex flex-wrap gap-3">
+                <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     href="/services"
                     className="inline-flex items-center gap-2 rounded-full bg-brand-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:bg-brand-500"
