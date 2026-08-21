@@ -117,7 +117,7 @@ export function ContactContent() {
               <FadeIn>
                 <div className="overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm">
                   <Img
-                    src="/images/hero-pressing.jpg"
+                    src="/images/quartier-d'armour.jpg"
                     alt={t.contactPage.mapLabel}
                     aspect="4/3"
                     className="border-b border-ink-100"

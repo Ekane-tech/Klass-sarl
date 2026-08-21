@@ -9,7 +9,7 @@ export function Cta() {
   return (
     <section className="bg-ink-900">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-brand-800 p-8 sm:p-12">
+        <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-brand-600 to-brand-800 p-8 sm:p-12">
           <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/10" />
           <div className="pointer-events-none absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-black/10" />
           <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
