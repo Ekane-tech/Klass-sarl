@@ -30,7 +30,7 @@ export function HomeContent() {
           <div className="absolute inset-0 bg-linear-to-r from-ink-950 via-ink-950/60 to-ink-900/20" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 py-5 sm:px-6 sm:py-5">
+        <div className="relative mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-6">
           <FadeIn>
             <div className="max-w-2xl">
               <SlideUp delay={0.1}>
