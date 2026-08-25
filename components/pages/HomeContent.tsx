@@ -269,13 +269,13 @@ export function HomeContent() {
             {t.testimonials.items.map((tm) => (
               <StaggerItem key={tm.name}>
                 <HoverLift>
-                  <figure className="rounded-3xl border border-ink-100 bg-ink-50 p-7">
+                  <figure className="flex h-full flex-col rounded-3xl border border-ink-100 bg-ink-50 p-7">
                     <div className="flex gap-1 text-brand-500" aria-label="5 sur 5">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <StarIcon key={i} className="h-5 w-5" fill="currentColor" strokeWidth={0} />
                       ))}
                     </div>
-                    <blockquote className="mt-4 text-ink-700">“{tm.quote}”</blockquote>
+                    <blockquote className="mt-4 flex-1 text-ink-700">"{tm.quote}"</blockquote>
                     <figcaption className="mt-5 border-t border-ink-100 pt-4">
                       <p className="font-semibold text-ink-900">{tm.name}</p>
                       <p className="text-sm text-ink-500">{tm.role}</p>
@@ -285,6 +285,43 @@ export function HomeContent() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+        </div>
+      </section>
+
+      {/* ===== PARTNERSHIP ===== */}
+      <section className="bg-brand-50 py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <SectionHeading
+            eyebrow={t.partnership.eyebrow}
+            title={t.partnership.title}
+            subtitle={t.partnership.subtitle}
+          />
+          <div className="mt-12 grid gap-12 lg:grid-cols-2">
+            <SlideIn direction="left">
+              <p className="text-lg leading-7 text-ink-700">{t.partnership.description}</p>
+              <StaggerContainer className="mt-8 grid gap-3 sm:grid-cols-2">
+                {t.partnership.points.map((p) => (
+                  <StaggerItem key={p}>
+                    <li className="flex items-start gap-2.5 text-sm text-ink-700">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                        <CheckIcon className="h-3.5 w-3.5" />
+                      </span>
+                      {p}
+                    </li>
+                  </StaggerItem>
+                ))}
+              </StaggerContainer>
+            </SlideIn>
+            <SlideIn direction="right">
+              <div className="rounded-3xl bg-white p-8 shadow-lg">
+                <h3 className="font-display text-2xl font-bold text-ink-900">{t.partnership.partnerName}</h3>
+                <p className="mt-2 text-sm text-ink-500">{t.partnership.partnerSubtitle}</p>
+                <p className="mt-4 text-ink-600">
+                  {t.partnership.partnerDescription}
+                </p>
+              </div>
+            </SlideIn>
+          </div>
         </div>
       </section>
 

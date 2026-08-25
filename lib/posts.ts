@@ -14,12 +14,12 @@ export const posts: Post[] = [
     slug: "conseils-entretien-pressing",
     date: "2026-07-18",
     category: "Pressing",
-    image: "/images/blog-pressing.jpg",
+    image: "/images/pressing-cloths.png",
     fr: {
       title: "5 conseils pour bien entretenir votre linge à la maison",
       excerpt:
         "Du tri des couleurs au séchage en passant par le repassage : nos astuces simples pour garder vos vêtements plus longtemps.",
-      readMinutes: 4,
+      readMinutes: 2,
       body: [
         "Prendre soin de son linge, c'est le premier pas pour le faire durer. Voici quelques réflexes simples que nous appliquons aussi à Klass Pressing.",
         "1. Triez toujours vos couleurs. Séparez le blanc, les couleurs foncées et les textiles délicats avant le lavage pour éviter les dégâts.",
@@ -34,7 +34,7 @@ export const posts: Post[] = [
       title: "5 tips to properly care for your laundry at home",
       excerpt:
         "From sorting colors to drying and ironing: simple tips to make your clothes last longer.",
-      readMinutes: 4,
+      readMinutes: 2,
       body: [
         "Taking care of your laundry is the first step to making it last. Here are a few simple habits we also apply at Klass Pressing.",
         "1. Always sort your colors. Separate whites, dark colors and delicate fabrics before washing to avoid damage.",
@@ -55,7 +55,7 @@ export const posts: Post[] = [
       title: "Comment choisir le bon portail pour votre maison",
       excerpt:
         "Coulissant ou battant ? Acier ou aluminium ? Nos conseils pour un portail durable, sécurisé et adapté à votre terrain.",
-      readMinutes: 6,
+      readMinutes: 2,
       body: [
         "Le portail est la première impression de votre maison, et surtout un élément de sécurité essentiel. Voici comment bien le choisir.",
         "Coulissant ou battant ? Le portail coulissant est idéal si l'espace devant votre entrée est limité. Le portail battant convient aux terrains larges et offre un aspect classique.",
@@ -69,7 +69,7 @@ export const posts: Post[] = [
       title: "How to choose the right gate for your home",
       excerpt:
         "Sliding or swinging? Steel or aluminium? Our advice for a durable, secure gate suited to your property.",
-      readMinutes: 6,
+      readMinutes: 2,
       body: [
         "Your gate is the first impression of your home, and above all an essential safety feature. Here is how to choose it well.",
         "Sliding or swinging? A sliding gate is ideal if space in front of your entrance is limited. A swinging gate suits wide plots and gives a classic look.",
@@ -89,7 +89,7 @@ export const posts: Post[] = [
       title: "Soudure et fabrications métalliques : que pouvez-vous commander ?",
       excerpt:
         "Portails, garde-corps, barreaux, structures… Un tour d'horizon de ce que notre atelier peut fabriquer pour vous.",
-      readMinutes: 5,
+      readMinutes: 2,
       body: [
         "Notre atelier de métallerie transforme le métal brut en ouvrages utiles et durables. Voici les fabrications les plus demandées.",
         "Portails et grilles : coulissants, battants ou sur-mesure, pour sécuriser et embellir vos entrées.",
@@ -103,7 +103,7 @@ export const posts: Post[] = [
       title: "Welding and metal fabrication: what can you order?",
       excerpt:
         "Gates, railings, window bars, structures… An overview of what our workshop can build for you.",
-      readMinutes: 5,
+      readMinutes: 2,
       body: [
         "Our metalwork workshop turns raw metal into useful, durable pieces. Here are the most requested fabrications.",
         "Gates and grilles: sliding, swinging or made to order, to secure and beautify your entrances.",
@@ -123,7 +123,7 @@ export const posts: Post[] = [
       title: "Entretenir vos ouvrages métalliques pour les faire durer",
       excerpt:
         "Rouille, peinture, entretien régulier : les bons gestes pour garder vos portails et garde-corps en parfait état.",
-      readMinutes: 4,
+      readMinutes: 3,
       body: [
         "Un ouvrage métallique bien entretenu peut durer des décennies. Voici les gestes essentiels.",
         "Luttez contre la rouille. Dès qu'une tache de rouille apparaît, poncez-la, traitez avec un antirouille puis repeignez.",
@@ -137,7 +137,7 @@ export const posts: Post[] = [
       title: "Caring for your metal pieces to make them last",
       excerpt:
         "Rust, paint, regular care: the right habits to keep your gates and railings in perfect condition.",
-      readMinutes: 4,
+      readMinutes: 3,
       body: [
         "A well-maintained metal piece can last for decades. Here are the essential habits.",
         "Fight rust. As soon as a rust spot appears, sand it, treat with a rust converter then repaint.",
@@ -152,7 +152,7 @@ export const posts: Post[] = [
     slug: "entretien-gardes-corps-balcons",
     date: "2026-05-09",
     category: "Pressing",
-    image: "/images/blog-pressing.jpg",
+    image: "/images/blog-pressing.png",
     fr: {
       title: "Repassage professionnel : gagnez du temps chaque semaine",
       excerpt:

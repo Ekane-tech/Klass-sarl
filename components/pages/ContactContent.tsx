@@ -113,22 +113,59 @@ export function ContactContent() {
                 <ContactForm />
               </FadeIn>
             </div>
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 space-y-6">
               <FadeIn>
                 <div className="overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm">
-                  <Img
-                    src="/images/quartier-d'armour.jpg"
-                    alt={t.contactPage.mapLabel}
-                    aspect="4/3"
-                    className="border-b border-ink-100"
-                    sizes="(min-width: 1024px) 40vw, 100vw"
-                  />
+                  <div className="relative">
+                    <Img
+                      src="/images/quartier-d'armour.JPG"
+                      alt={t.contactPage.mapLabel}
+                      aspect="4/3"
+                      className="border-b border-ink-100"
+                      sizes="(min-width: 1024px) 40vw, 100vw"
+                    />
+                    <span className="absolute left-4 top-4 rounded-full bg-brand-600 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white">
+                      {t.contactPage.mapLocation}
+                    </span>
+                  </div>
                   <div className="p-6">
                     <h3 className="font-display text-lg font-bold text-ink-900">
                       {t.contactPage.mapLabel}
                     </h3>
+                    <p className="mt-2 text-sm text-ink-600">{t.contactPage.mapDescription}</p>
                     <a
                       href="https://www.google.com/maps/search/?api=1&query=rond+point+quartier+damour"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-ink-700"
+                    >
+                      <PinIcon className="h-4 w-4" />
+                      Google Maps
+                    </a>
+                  </div>
+                </div>
+              </FadeIn>
+              <FadeIn>
+                <div className="overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm">
+                  <div className="relative">
+                    <Img
+                      src="/images/quartier-d'armour.JPG"
+                      alt={t.contactPage.lyceeLabel}
+                      aspect="4/3"
+                      className="border-b border-ink-100"
+                      sizes="(min-width: 1024px) 40vw, 100vw"
+                    />
+                    <span className="absolute left-4 top-4 rounded-full bg-brand-600 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white">
+                      {t.contactPage.lyceeLocation}
+                    </span>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-display text-lg font-bold text-ink-900">
+                      {t.contactPage.lyceeLabel}
+                    </h3>
+                    <p className="mt-2 text-sm text-ink-600">{t.contactPage.lyceeDescription}</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=lycee+classique+edea"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-ink-700"
