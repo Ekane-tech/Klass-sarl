@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     areaServed: "Littoral, Cameroun",
     openingHours: "Mo-Sa 07:30-19:00",
     priceRange: "$$",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://klass-sarl.example.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://klasssarl.com",
   };
 
   return (
