@@ -18,11 +18,13 @@ export function ContactForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
     const payload = {
-      name: String(data.get("name") || ""),
-      phone: String(data.get("phone") || ""),
-      email: String(data.get("email") || ""),
+      name: String(data.get("name") || "").trim(),
+      phone: String(data.get("phone") || "").trim(),
+      email: String(data.get("email") || "").trim(),
       service: String(data.get("service") || ""),
-      message: String(data.get("message") || ""),
+      message: String(data.get("message") || "").trim(),
+      // Honeypot field — stays empty for humans, bots tend to fill it.
+      website: String(data.get("website") || ""),
     };
 
     if (!payload.name || !payload.email || !payload.message) {
@@ -47,18 +49,35 @@ export function ContactForm() {
         return;
       }
 
-      // API not configured (no SMTP) — fall back to the visitor's mail client.
-      const subject = encodeURIComponent(
-        `${company.name} — ${payload.service || t.form.servicePh}`
-      );
-      const body = encodeURIComponent(
-        `${t.form.name}: ${payload.name}\n${t.form.phone}: ${payload.phone}\n${t.form.email}: ${payload.email}\n\n${payload.message}`
-      );
-      // Open the visitor's mail client with a pre-filled message.
-      const mailto = document.createElement("a");
-      mailto.href = `${company.emailHref}?subject=${subject}&body=${body}`;
-      mailto.click();
-      setStatus("success");
+      // Only fall back to the visitor's mail client when the server
+      // explicitly says SMTP is not configured. Any other failure
+      // (validation, send error…) is a real error the user should see.
+      const info = (await res.json().catch(() => null)) as
+        | { fallback?: string }
+        | null;
+
+      if (info?.fallback === "mailto") {
+        const serviceLabels: Record<string, string> = {
+          pressing: t.form.servicePressing,
+          workshop: t.form.serviceWorkshop,
+          other: t.form.serviceOther,
+        };
+        const subject = encodeURIComponent(
+          `${company.name} — ${serviceLabels[payload.service] || t.form.servicePh}`
+        );
+        const body = encodeURIComponent(
+          `${t.form.name}: ${payload.name}\n${t.form.phone}: ${payload.phone}\n${t.form.email}: ${payload.email}\n\n${payload.message}`
+        );
+        // Open the visitor's mail client with a pre-filled message.
+        const mailto = document.createElement("a");
+        mailto.href = `${company.emailHref}?subject=${subject}&body=${body}`;
+        mailto.click();
+        setStatus("success");
+        return;
+      }
+
+      setErrorMsg(t.form.error);
+      setStatus("error");
     } catch {
       setErrorMsg(t.form.error);
       setStatus("error");
@@ -95,7 +114,13 @@ export function ContactForm() {
           </button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+        <form onSubmit={handleSubmit} className="relative mt-6 space-y-4">
+          {/* Honeypot anti-spam field — invisible to humans, filled by bots. */}
+          <div aria-hidden="true" className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden">
+            <label htmlFor="website">Website</label>
+            <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+          </div>
+
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
               <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-ink-700">
