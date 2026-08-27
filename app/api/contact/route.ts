@@ -5,7 +5,7 @@ const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = Number(process.env.SMTP_PORT || 587);
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
-const CONTACT_TO = process.env.CONTACT_TO || "Klasssarl@yahoo.com";
+const CONTACT_TO = process.env.CONTACT_TO || "ekanebryan5@gmail.com";
 const FROM_EMAIL = process.env.FROM_EMAIL || SMTP_USER || "Klasssarl@yahoo.com";
 
 /** Human-readable labels for the service <select> values sent by the form. */
