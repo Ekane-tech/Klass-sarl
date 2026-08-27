@@ -47,44 +47,10 @@ export const posts: Post[] = [
     },
   },
   {
-    slug: "choisir-bon-portail",
-    date: "2026-07-02",
-    category: "Métallerie",
-    image: "/images/blog-metal.jpg",
-    fr: {
-      title: "Comment choisir le bon portail pour votre maison",
-      excerpt:
-        "Coulissant ou battant ? Acier ou aluminium ? Nos conseils pour un portail durable, sécurisé et adapté à votre terrain.",
-      readMinutes: 2,
-      body: [
-        "Le portail est la première impression de votre maison, et surtout un élément de sécurité essentiel. Voici comment bien le choisir.",
-        "Coulissant ou battant ? Le portail coulissant est idéal si l'espace devant votre entrée est limité. Le portail battant convient aux terrains larges et offre un aspect classique.",
-        "Quel matériau ? L'acier est robuste, économique et se peint facilement. L'aluminium est plus léger et ne rouille pas, mais coûte plus cher.",
-        "Pensez à la motorisation. Une motorisation de qualité (avec détection d'obstacle) facilite l'usage quotidien et améliore la sécurité.",
-        "Faites appel à un professionnel pour la pose. Une structure bien soudée et bien ancrée dure des décennies.",
-        "Notre atelier à Edéa fabrique des portails coulissants et battants sur mesure. Nous vous conseillons sur le modèle et le matériau les mieux adaptés.",
-      ],
-    },
-    en: {
-      title: "How to choose the right gate for your home",
-      excerpt:
-        "Sliding or swinging? Steel or aluminium? Our advice for a durable, secure gate suited to your property.",
-      readMinutes: 2,
-      body: [
-        "Your gate is the first impression of your home, and above all an essential safety feature. Here is how to choose it well.",
-        "Sliding or swinging? A sliding gate is ideal if space in front of your entrance is limited. A swinging gate suits wide plots and gives a classic look.",
-        "Which material? Steel is sturdy, economical and easy to paint. Aluminium is lighter and does not rust, but costs more.",
-        "Think about automation. A good motor (with obstacle detection) makes daily use easier and improves security.",
-        "Call in a professional for installation. A well-welded, well-anchored structure lasts for decades.",
-        "Our Edea workshop builds custom made sliding and swinging gates. We advise you on the best model and material.",
-      ],
-    },
-  },
-  {
     slug: "soudure-fabrications-sur-mesure",
     date: "2026-06-14",
     category: "Métallerie",
-    image: "/images/blog-welding.jpg",
+    image: "/images/blog-welding.png",
     fr: {
       title: "Soudure et fabrications métalliques : que pouvez-vous commander ?",
       excerpt:
@@ -111,40 +77,6 @@ export const posts: Post[] = [
         "Metal structures: frames, frameworks, supports for buildings, shelters and industrial equipment.",
         "Furniture and other pieces: tables, supports, frames, repairs… tell us what you need.",
         "Every project starts with a clear quote. We measure, advise on the material, then build and install with care.",
-      ],
-    },
-  },
-  {
-    slug: "entretenir-ouvrages-metalliques",
-    date: "2026-05-28",
-    category: "Entretien",
-    image: "/images/blog-care.jpg",
-    fr: {
-      title: "Entretenir vos ouvrages métalliques pour les faire durer",
-      excerpt:
-        "Rouille, peinture, entretien régulier : les bons gestes pour garder vos portails et garde-corps en parfait état.",
-      readMinutes: 3,
-      body: [
-        "Un ouvrage métallique bien entretenu peut durer des décennies. Voici les gestes essentiels.",
-        "Luttez contre la rouille. Dès qu'une tache de rouille apparaît, poncez-la, traitez avec un antirouille puis repeignez.",
-        "Peinture : rafraîchissez la peinture tous les 2 à 3 ans pour protéger le métal de l'humidité et des intempéries.",
-        "Lubrifiez les charnières, rails et mécanismes au moins deux fois par an pour un fonctionnement fluide.",
-        "Vérifiez les soudures et fixations régulièrement, surtout après la saison des pluies.",
-        "Besoin d'une réparation ou d'un rafraîchissement ? L'atelier Klass Sarl peut redonner vie à vos ouvrages métalliques.",
-      ],
-    },
-    en: {
-      title: "Caring for your metal pieces to make them last",
-      excerpt:
-        "Rust, paint, regular care: the right habits to keep your gates and railings in perfect condition.",
-      readMinutes: 3,
-      body: [
-        "A well-maintained metal piece can last for decades. Here are the essential habits.",
-        "Fight rust. As soon as a rust spot appears, sand it, treat with a rust converter then repaint.",
-        "Paint: refresh the paint every 2 to 3 years to protect the metal from moisture and weather.",
-        "Lubricate hinges, tracks and mechanisms at least twice a year for smooth operation.",
-        "Check welds and fittings regularly, especially after the rainy season.",
-        "Need a repair or a refresh? The Klass Sarl workshop can give new life to your metal pieces.",
       ],
     },
   },

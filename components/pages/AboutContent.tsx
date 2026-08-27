@@ -67,7 +67,7 @@ export function AboutContent() {
           </SlideIn>
           <SlideIn direction="right">
             <Img
-              src="/images/team.jpg"
+              src="/images/workshop-office.png"
               alt={t.aboutPage.imageLabel}
               aspect="4/3"
               className="rounded-3xl shadow-xl"
