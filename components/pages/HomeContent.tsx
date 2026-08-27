@@ -262,7 +262,7 @@ export function HomeContent() {
       </section>
 
       {/* ===== TESTIMONIALS ===== */}
-      <section className="bg-white py-20 sm:py-24">
+      {/* <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading eyebrow={t.testimonials.eyebrow} title={t.testimonials.title} />
           <StaggerContainer className="mt-12 grid gap-6 md:grid-cols-3">
@@ -286,7 +286,7 @@ export function HomeContent() {
             ))}
           </StaggerContainer>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== PARTNERSHIP ===== */}
       <section className="bg-brand-50 py-20 sm:py-24">
