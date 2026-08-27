@@ -302,7 +302,7 @@ const en: typeof fr = {
         icon: "wrench",
         title: "Metalwork Workshop",
         desc: "Welding and metal fabrication: gates, railings, window bars, metal structures and custom made pieces. ALUCAM partner for metalwork in Edea.",
-        image: "/images/service-welding2.jpg",
+        image: "/images/service-welding.jpg",
       },
     ],
     workshopSub: {
