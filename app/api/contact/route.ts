@@ -225,7 +225,19 @@ function buildEmailHtml(d: EmailData): string {
           <!-- Banner -->
           <tr>
             <td style="background-color:#2f8a4e;padding:14px 32px;">
-              <span style="font-size:15px;font-weight:bold;color:#ffffff;">📩 Nouvelle demande de contact depuis le site web</span>
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-right:12px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#ffffff;">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </td>
+                  <td>
+                    <span style="font-size:15px;font-weight:bold;color:#ffffff;">Nouvelle demande de contact depuis le site web</span>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
