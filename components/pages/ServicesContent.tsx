@@ -81,7 +81,7 @@ export function ServicesContent() {
             title={t.services.workshopSub.title}
             subtitle={t.services.items[1].desc}
           />
-          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid gap-6 grid-cols-2 lg:grid-cols-4">
             {t.services.workshopSub.items.map((w) => (
               <StaggerItem key={w.title}>
                 <HoverLift>
