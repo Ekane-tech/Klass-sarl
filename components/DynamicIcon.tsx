@@ -11,6 +11,9 @@ import {
   MapPin,
   Target,
   Lightbulb,
+  Zap,
+  Flame,
+  Sparkles,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -26,6 +29,9 @@ const map: Record<string, LucideIcon> = {
   "map-pin": MapPin,
   target: Target,
   lightbulb: Lightbulb,
+  zap: Zap,
+  flame: Flame,
+  sparkles: Sparkles,
 };
 
 type DynamicIconProps = SVGProps<SVGSVGElement> & { name: string };

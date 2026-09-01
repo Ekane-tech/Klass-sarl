@@ -97,6 +97,42 @@ export function ServicesContent() {
             ))}
           </StaggerContainer>
 
+          {/* Welding techniques */}
+          <div className="mt-16">
+            <div className="text-xs font-semibold uppercase tracking-wider text-brand-600">
+              {t.services.weldingTypes.eyebrow}
+            </div>
+            <h3 className="mt-2 font-display text-2xl font-bold text-ink-900">
+              {t.services.weldingTypes.title}
+            </h3>
+            <p className="mt-2 text-sm text-ink-500">{t.services.weldingTypes.subtitle}</p>
+            <StaggerContainer className="mt-8 grid gap-6 sm:grid-cols-3">
+              {t.services.weldingTypes.items.map((w) => (
+                <StaggerItem key={w.title}>
+                  <HoverLift>
+                    <div className="rounded-3xl border border-ink-100 bg-white p-6">
+                      <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600">
+                        <DynamicIcon name={w.icon} className="h-6 w-6" />
+                      </span>
+                      <h4 className="mt-4 font-display text-lg font-bold text-ink-900">{w.title}</h4>
+                      <p className="mt-2 text-sm leading-6 text-ink-500">{w.desc}</p>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {w.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </HoverLift>
+                </StaggerItem>
+              ))}
+            </StaggerContainer>
+          </div>
+
           <StaggerContainer className="mt-10 grid gap-6 lg:grid-cols-2">
             <StaggerItem>
               <div className="flex items-start gap-4 rounded-3xl border border-ink-100 bg-white p-6">

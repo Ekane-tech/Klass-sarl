@@ -79,6 +79,31 @@ const fr = {
         { icon: "building", title: "Structures métalliques", desc: "Charpentes, ossatures et supports pour bâtiments et équipements." },
       ],
     },
+    weldingTypes: {
+      eyebrow: "Nos techniques",
+      title: "Les types de soudure que nous pratiquons",
+      subtitle: "Nous choisissons la technique adaptée à chaque projet et à chaque matériau pour garantir un résultat optimal.",
+      items: [
+        {
+          icon: "zap",
+          title: "Soudure à l'arc (électrode enrobée)",
+          desc: "Technique robuste et polyvalente, idéale pour les portails, grilles, barreaux et structures métalliques, même en extérieur.",
+          tags: ["Portails", "Grilles", "Structures"],
+        },
+        {
+          icon: "flame",
+          title: "Soudure semi-automatique (MIG/MAG)",
+          desc: "Soudure au fil sous gaz de protection, rapide et régulière, parfaite pour les fabrications en série et l'acier de nos ouvrages.",
+          tags: ["Acier", "Fabrication", "Finition propre"],
+        },
+        {
+          icon: "sparkles",
+          title: "Soudure TIG (argon)",
+          desc: "La technique la plus précise, sous gaz argon, pour l'inox, l'aluminium et les finitions soignées de garde-corps et mobilier métallique.",
+          tags: ["Inox", "Aluminium", "Précision"],
+        },
+      ],
+    },
     ctaTitle: "Un projet à réaliser ?",
     ctaSubtitle: "Décrivez-nous votre besoin, nous vous proposons une solution sur mesure.",
     ctaButton: "Demander un devis",
@@ -312,6 +337,31 @@ const en: typeof fr = {
         { icon: "door", title: "Gates & grilles", desc: "Sliding or swinging gates and security grilles made to order." },
         { icon: "grid", title: "Railings & window bars", desc: "Protection for windows, balconies and stairs — elegant and safe." },
         { icon: "building", title: "Metal structures", desc: "Frames, frameworks and supports for buildings and equipment." },
+      ],
+    },
+    weldingTypes: {
+      eyebrow: "Our techniques",
+      title: "The welding techniques we use",
+      subtitle: "We choose the right technique for each project and material to ensure optimal results.",
+      items: [
+        {
+          icon: "zap",
+          title: "Arc welding (stick electrode)",
+          desc: "Robust and versatile technique, ideal for gates, grilles, bars and metal structures, even outdoors.",
+          tags: ["Gates", "Grilles", "Structures"],
+        },
+        {
+          icon: "flame",
+          title: "Semi-automatic welding (MIG/MAG)",
+          desc: "Wire welding under shielding gas, fast and regular, perfect for series production and the steel of our works.",
+          tags: ["Steel", "Fabrication", "Clean finish"],
+        },
+        {
+          icon: "sparkles",
+          title: "TIG welding (argon)",
+          desc: "The most precise technique, under argon gas, for stainless steel, aluminum and refined finishes of railings and metal furniture.",
+          tags: ["Stainless", "Aluminum", "Precision"],
+        },
       ],
     },
     ctaTitle: "A project in mind?",
