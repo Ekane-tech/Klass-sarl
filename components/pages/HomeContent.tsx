@@ -197,7 +197,7 @@ export function HomeContent() {
             eyebrow={t.services.items[1].title}
             title={t.services.workshopSub.title}
           />
-          <StaggerContainer className="mt-12 grid gap-6 grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.services.workshopSub.items.map((w) => (
               <StaggerItem key={w.title}>
                 <HoverLift>
@@ -223,7 +223,7 @@ export function HomeContent() {
             title={t.why.title}
             subtitle={t.why.subtitle}
           />
-          <StaggerContainer className="mt-12 grid gap-6 grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.why.items.map((w) => (
               <StaggerItem key={w.title}>
                 <HoverLift>
@@ -245,7 +245,7 @@ export function HomeContent() {
       <section className="bg-ink-50 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading eyebrow={t.process.eyebrow} title={t.process.title} />
-          <StaggerContainer className="mt-12 grid gap-6 grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.process.items.map((p, i) => (
               <StaggerItem key={p.title}>
                 <div className="relative rounded-3xl border border-ink-100 bg-white p-6">

@@ -74,7 +74,7 @@ export function ContactContent() {
       <section className="bg-ink-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           {/* Info cards */}
-          <StaggerContainer className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {infoCards.map((c) => {
               const Icon = c.icon;
               const content = (
