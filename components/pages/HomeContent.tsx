@@ -19,7 +19,7 @@ export function HomeContent() {
       <section className="relative overflow-hidden bg-ink-900 text-white">
         <div className="absolute inset-0">
           <Img
-            src="/images/hero-workshop.jpg"
+            src="/images/hero-workshop.png"
             alt={t.hero.imageLabel}
             aspect="auto"
             className="h-full w-full opacity-40"
