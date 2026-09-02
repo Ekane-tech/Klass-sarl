@@ -123,11 +123,12 @@ export function HomeContent() {
           <SlideIn direction="right">
             <div className="relative">
               <Img
-                src="/images/about.jpg"
+                src="/images/klass-office.png"
                 alt={t.intro.imageLabel}
                 aspect="4/3"
                 className="rounded-3xl shadow-xl"
                 sizes="(min-width: 1024px) 50vw, 100vw"
+                imgClassName="object-top"
               />
               <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-brand-600 p-5 text-white shadow-lg sm:block">
                 <p className="font-display text-3xl font-bold">+10</p>
