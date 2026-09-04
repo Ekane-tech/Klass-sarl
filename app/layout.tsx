@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Pressing, métallerie, soudure, portails et structures métalliques sur mesure à Edéa, Cameroun.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/klass-sarl-logo.png",
         width: 1200,
         height: 630,
         alt: "Klass Sarl — Pressing & Métallerie à Edéa",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Klass Sarl — Pressing & Métallerie à Edéa",
     description:
       "Pressing, métallerie, soudure, portails et structures métalliques sur mesure à Edéa, Cameroun.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/klass-sarl-logo.png"],
   },
   robots: {
     index: true,

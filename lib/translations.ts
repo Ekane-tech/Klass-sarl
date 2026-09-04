@@ -67,7 +67,7 @@ const fr = {
         icon: "wrench",
         title: "Atelier Métallerie",
         desc: "Soudure et fabrication métallique : portails, garde-corps, barreaux, structures métalliques et ouvrages sur mesure. Partenaire d'ALUCAM pour les travaux métalliques à Edéa.",
-        image: "/images/service-welding00.jpg",
+        image: "/images/home-image2.jpg",
       },
     ],
     workshopSub: {
