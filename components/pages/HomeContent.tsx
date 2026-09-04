@@ -6,7 +6,8 @@ import { posts } from "@/lib/posts";
 import { Img } from "@/components/Img";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Cta } from "@/components/Cta";
-import { ArrowRightIcon, CheckIcon, StarIcon } from "@/components/icons";
+// NOTE: re-add StarIcon to this import when re-enabling the testimonials section below.
+import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { DynamicIcon } from "@/components/DynamicIcon";
 import { FadeIn, SlideUp, SlideIn, StaggerContainer, StaggerItem, HoverLift } from "@/components/animations";
 
