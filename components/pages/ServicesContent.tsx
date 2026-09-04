@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { Img } from "@/components/Img";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -34,52 +35,13 @@ export function ServicesContent() {
         </div>
       </section>
 
-      {/* Pressing */}
-      <section id="pressing" className="scroll-mt-24 bg-white py-20 sm:py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
-          <SlideIn direction="left">
-            <Img
-              src="/images/siege.png"
-              alt={t.services.items[0].title}
-              aspect="4/3"
-              className="rounded-3xl shadow-xl"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-          </SlideIn>
-          <SlideIn direction="right">
-            <div>
-              <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-700">
-                <DynamicIcon name={t.services.items[0].icon} className="h-4 w-4" />
-                {t.services.items[0].title}
-              </span>
-              <h2 className="font-display text-3xl font-bold text-ink-900 sm:text-4xl">
-                {t.services.items[0].title}
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-ink-600">{t.services.items[0].desc}</p>
-              <StaggerContainer className="mt-6 grid gap-3 sm:grid-cols-2">
-                {t.services.pressingPoints.map((p) => (
-                  <StaggerItem key={p}>
-                    <li className="flex items-start gap-2.5 text-sm text-ink-700">
-                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
-                        <CheckIcon className="h-3.5 w-3.5" />
-                      </span>
-                      {p}
-                    </li>
-                  </StaggerItem>
-                ))}
-              </StaggerContainer>
-            </div>
-          </SlideIn>
-        </div>
-      </section>
-
       {/* Workshop */}
-      <section id="workshop" className="scroll-mt-24 bg-ink-50 py-20 sm:py-24">
+      <section id="workshop" className="scroll-mt-24 bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading
-            eyebrow={t.services.items[1].title}
+            eyebrow={t.services.items[0].title}
             title={t.services.workshopSub.title}
-            subtitle={t.services.items[1].desc}
+            subtitle={t.services.items[0].desc}
           />
           <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.services.workshopSub.items.map((w) => (
@@ -181,6 +143,66 @@ export function ServicesContent() {
               )
             )}
           </StaggerContainer>
+        </div>
+      </section>
+
+      {/* Spare parts teaser */}
+      <section className="bg-brand-600 py-14 text-white">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:px-6 md:flex-row md:items-center">
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-wider text-brand-100">
+              {t.services.productsTeaser.eyebrow}
+            </span>
+            <h2 className="mt-2 font-display text-2xl font-bold sm:text-3xl">
+              {t.services.productsTeaser.title}
+            </h2>
+            <p className="mt-2 max-w-xl text-brand-50">{t.services.productsTeaser.subtitle}</p>
+          </div>
+          <Link
+            href="/products"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand-700 transition hover:bg-brand-50"
+          >
+            {t.services.productsTeaser.cta}
+          </Link>
+        </div>
+      </section>
+
+      {/* Pressing */}
+      <section id="pressing" className="scroll-mt-24 bg-ink-50 py-20 sm:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
+          <SlideIn direction="left">
+            <Img
+              src="/images/siege.png"
+              alt={t.services.items[1].title}
+              aspect="4/3"
+              className="rounded-3xl shadow-xl"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+          </SlideIn>
+          <SlideIn direction="right">
+            <div>
+              <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-700">
+                <DynamicIcon name={t.services.items[1].icon} className="h-4 w-4" />
+                {t.services.items[1].title}
+              </span>
+              <h2 className="font-display text-3xl font-bold text-ink-900 sm:text-4xl">
+                {t.services.items[1].title}
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-ink-600">{t.services.items[1].desc}</p>
+              <StaggerContainer className="mt-6 grid gap-3 sm:grid-cols-2">
+                {t.services.pressingPoints.map((p) => (
+                  <StaggerItem key={p}>
+                    <li className="flex items-start gap-2.5 text-sm text-ink-700">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                        <CheckIcon className="h-3.5 w-3.5" />
+                      </span>
+                      {p}
+                    </li>
+                  </StaggerItem>
+                ))}
+              </StaggerContainer>
+            </div>
+          </SlideIn>
         </div>
       </section>
 

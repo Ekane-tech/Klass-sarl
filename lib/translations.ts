@@ -2,13 +2,14 @@ export type Lang = "fr" | "en";
 
 const fr = {
   meta: {
-    title: "Klass Sarl — Pressing & Métallerie à Edéa",
+    title: "Klass Sarl — Métallerie & Soudure à Edéa",
     description:
-      "Klass Sarl regroupe plusieurs petites entreprises à Edéa (Littoral, Cameroun) : Klass Pressing pour l'entretien du linge et un atelier de métallerie, soudure, portails, garde-corps et structures métalliques. Qualité, sérieux et service sur mesure.",
+      "Klass Sarl, atelier de métallerie à Edéa (Littoral, Cameroun) : soudure, portails, garde-corps, structures métalliques, pièces de rechange. Partenaire d'ALUCAM. Également Klass Pressing pour l'entretien du linge. Qualité, sérieux et service sur mesure.",
   },
   nav: {
     home: "Accueil",
     services: "Services",
+    products: "Pièces de rechange",
     about: "À propos",
     blog: "Blog",
     contact: "Contact",
@@ -20,31 +21,31 @@ const fr = {
     hours: "Lun – Sam : 7h30 – 19h",
   },
   hero: {
-    badge: "Pressing & Métallerie — Edéa",
-    titleA: "Des services de qualité au",
-    titleHighlight: "cœur d'Edéa",
+    badge: "Métallerie & Soudure — Edéa",
+    titleA: "L'atelier de métallerie de",
+    titleHighlight: "référence à Edéa",
     titleB: "",
     subtitle:
-      "Klass Sarl regroupe Klass Pressing et un atelier de métallerie. Nous unissons le savoir-faire local pour des prestations propres, solides et faites sur mesure.",
-    ctaPrimary: "Découvrir nos services",
+      "Klass Sarl, c'est avant tout un atelier de métallerie : soudure, portails, garde-corps, structures métalliques et pièces de rechange. Partenaire d'ALUCAM. Et pour votre linge, Klass Pressing complète nos services.",
+    ctaPrimary: "Découvrir l'atelier",
     ctaSecondary: "Nous contacter",
     imageLabel: "L'atelier de Klass Sarl",
     stats: [
-      { value: "2", label: "Pôles d'activité" },
       { value: "+10", label: "Années d'expérience" },
       { value: "100%", label: "Fait sur mesure" },
+      { value: "2", label: "Pôles d'activité" },
     ],
   },
   intro: {
     eyebrow: "Bienvenue chez Klass Sarl",
-    title: "Une entreprise, plusieurs métiers",
-    p1: "Klass Sarl est une entreprise implantée à Edéa, dans le Littoral du Cameroun. Nous fédérons plusieurs petites entreprises sous un même standard de qualité et de confiance.",
-    p2: "D'un côté, Klass Pressing prend soin de votre linge. De l'autre, notre atelier de métallerie conçoit et fabrique des ouvrages métalliques robustes : soudure, portails, garde-corps, barreaux et structures métalliques.",
+    title: "La métallerie au cœur de notre métier",
+    p1: "Klass Sarl est une entreprise implantée à Edéa, dans le Littoral du Cameroun. Notre cœur de métier : l'atelier de métallerie, qui conçoit et fabrique des ouvrages métalliques robustes — soudure, portails, garde-corps, barreaux, structures métalliques — et fournit des pièces de rechange pour vos équipements.",
+    p2: "En complément, Klass Pressing prend soin de votre linge avec le même standard de qualité et de confiance.",
     featureList: [
-      "Entretien de vêtements et de linge",
       "Soudure et fabrication métallique",
       "Portails, garde-corps & barreaux",
       "Structures et ouvrages sur mesure",
+      "Pièces de rechange & consommables",
     ],
     cta: "En savoir plus",
     imageLabel: "Notre équipe et nos équipements",
@@ -56,18 +57,18 @@ const fr = {
       "Deux grandes familles de services, avec la même exigence : un travail soigné, livré dans les délais, au juste prix.",
     items: [
       {
-        key: "pressing",
-        icon: "shirt",
-        title: "Klass Pressing",
-        desc: "Lavage, repassage et entretien du linge et des vêtements. Reprise rapide et soin attentif de vos tissus.",
-        image: "/images/pressing-interior.png",
-      },
-      {
         key: "workshop",
         icon: "wrench",
         title: "Atelier Métallerie",
-        desc: "Soudure et fabrication métallique : portails, garde-corps, barreaux, structures métalliques et ouvrages sur mesure. Partenaire d'ALUCAM pour les travaux métalliques à Edéa.",
+        desc: "Notre cœur de métier : soudure et fabrication métallique — portails, garde-corps, barreaux, structures métalliques et ouvrages sur mesure. Partenaire d'ALUCAM pour les travaux métalliques à Edéa.",
         image: "/images/service-welding1.jpg",
+      },
+      {
+        key: "pressing",
+        icon: "shirt",
+        title: "Klass Pressing",
+        desc: "En complément : lavage, repassage et entretien du linge et des vêtements. Reprise rapide et soin attentif de vos tissus.",
+        image: "/images/pressing-interior.png",
       },
     ],
     workshopSub: {
@@ -103,6 +104,12 @@ const fr = {
           tags: ["Inox", "Aluminium", "Précision"],
         },
       ],
+    },
+    productsTeaser: {
+      eyebrow: "Pièces de rechange",
+      title: "L'atelier vend aussi des pièces et consommables",
+      subtitle: "Gaines, lames de scie, disques, électrodes et accessoires pour portails — disponibles directement à l'atelier.",
+      cta: "Voir les pièces de rechange",
     },
     ctaTitle: "Un projet à réaliser ?",
     ctaSubtitle: "Décrivez-nous votre besoin, nous vous proposons une solution sur mesure.",
@@ -177,7 +184,7 @@ const fr = {
   },
   footer: {
     about:
-      "Klass Sarl fédère plusieurs petites entreprises à Edéa : pressing, métallerie, soudure et fabrications métalliques.",
+      "Klass Sarl, atelier de métallerie à Edéa : soudure, fabrications métalliques, pièces de rechange — et Klass Pressing pour votre linge.",
     quickLinks: "Liens rapides",
     servicesTitle: "Services",
     contactTitle: "Contact",
@@ -253,6 +260,59 @@ const fr = {
     title: "Blog Klass Sarl",
     subtitle: "Conseils d'entretien, actualités de l'atelier et astuces pratiques.",
   },
+  productsPage: {
+    title: "Pièces de rechange",
+    subtitle:
+      "En plus de ses fabrications, l'atelier Klass Sarl vend des pièces de rechange et des consommables pour vos équipements et vos travaux de métallerie.",
+    intro:
+      "Disponibles directement à l'atelier, quartier Pongo (à 30m du Lycée Classique d'Edéa). Appelez-nous pour vérifier la disponibilité et les prix.",
+    availability: "Disponible à l'atelier",
+    askPrice: "Prix sur demande",
+    orderTitle: "Vous cherchez une pièce précise ?",
+    orderSubtitle:
+      "Appelez-nous ou envoyez-nous un message avec la référence ou une photo de la pièce : nous vous disons rapidement si nous l'avons ou si nous pouvons la commander.",
+    orderButton: "Demander une pièce",
+    callButton: "Appeler l'atelier",
+    note: "Photos non contractuelles. Le stock varie — contactez-nous pour confirmer la disponibilité.",
+    items: [
+      {
+        name: "Gaine jaune",
+        desc: "Gaine électrique jaune souple pour la protection des câbles dans vos installations.",
+        image: "/images/product-gaine-jaune.jpg",
+        category: "Électricité",
+      },
+      {
+        name: "Lame de scie Arivan",
+        desc: "Lames de scie robustes pour la coupe du métal et du bois, marque Arivan.",
+        image: "/images/product-lame-scie.jpg",
+        category: "Coupe",
+      },
+      {
+        name: "Disques de coupe & meulage",
+        desc: "Disques abrasifs pour meuleuse : tronçonnage et meulage du métal.",
+        image: "/images/product-disques.jpg",
+        category: "Coupe",
+      },
+      {
+        name: "Électrodes de soudure",
+        desc: "Baguettes d'électrodes enrobées pour la soudure à l'arc, plusieurs diamètres.",
+        image: "/images/product-electrodes.jpg",
+        category: "Soudure",
+      },
+      {
+        name: "Paumelles à souder",
+        desc: "Paumelles et gonds à souder pour portails, portes métalliques et grilles.",
+        image: "/images/product-paumelles.jpg",
+        category: "Portails",
+      },
+      {
+        name: "Galets de portail coulissant",
+        desc: "Galets et roulettes pour portails coulissants, avec supports et roulements.",
+        image: "/images/product-galets.jpg",
+        category: "Portails",
+      },
+    ],
+  },
   notFound: {
     title: "Page introuvable",
     text: "La page que vous cherchez n'existe pas.",
@@ -262,13 +322,14 @@ const fr = {
 
 const en: typeof fr = {
   meta: {
-    title: "Klass Sarl — Pressing & Metalwork in Edea",
+    title: "Klass Sarl — Metalwork & Welding in Edea",
     description:
-      "Klass Sarl brings together several small businesses in Edea (Littoral, Cameroon): Klass Pressing for laundry care and a metalwork workshop offering welding, gates, railings and custom metal structures. Quality, reliability and custom made work.",
+      "Klass Sarl, metalwork workshop in Edea (Littoral, Cameroon): welding, gates, railings, metal structures and spare parts. ALUCAM partner. Also Klass Pressing for laundry care. Quality, reliability and custom made work.",
   },
   nav: {
     home: "Home",
     services: "Services",
+    products: "Spare parts",
     about: "About",
     blog: "Blog",
     contact: "Contact",
@@ -280,31 +341,31 @@ const en: typeof fr = {
     hours: "Mon – Sat: 7:30 am – 7 pm",
   },
   hero: {
-    badge: "Pressing & Metalwork — Edea",
-    titleA: "Quality services at the",
-    titleHighlight: "heart of Edea",
+    badge: "Metalwork & Welding — Edea",
+    titleA: "The leading metalwork",
+    titleHighlight: "workshop in Edea",
     titleB: "",
     subtitle:
-      "Klass Sarl brings together Klass Pressing and a metalwork workshop. We combine local craftsmanship for clean, sturdy, custom made work.",
-    ctaPrimary: "Explore our services",
+      "Klass Sarl is first and foremost a metalwork workshop: welding, gates, railings, metal structures and spare parts. ALUCAM partner. And for your laundry, Klass Pressing completes our services.",
+    ctaPrimary: "Explore the workshop",
     ctaSecondary: "Contact us",
     imageLabel: "The Klass Sarl workshop",
     stats: [
-      { value: "2", label: "Areas of activity" },
       { value: "+10", label: "Years of experience" },
       { value: "100%", label: "Custom made" },
+      { value: "2", label: "Areas of activity" },
     ],
   },
   intro: {
     eyebrow: "Welcome to Klass Sarl",
-    title: "One company, several trades",
-    p1: "Klass Sarl is a family business based in Edea, in the Littoral region of Cameroon. We bring several small businesses together under the same standard of quality and trust.",
-    p2: "On one side, Klass Pressing takes care of your laundry. On the other, our metalwork workshop designs and builds robust metal pieces: welding, gates, railings, window bars and metal structures.",
+    title: "Metalwork at the heart of what we do",
+    p1: "Klass Sarl is a company based in Edea, in the Littoral region of Cameroon. Our core business is the metalwork workshop, which designs and builds robust metal pieces — welding, gates, railings, window bars, metal structures — and supplies spare parts for your equipment.",
+    p2: "Alongside it, Klass Pressing takes care of your laundry with the same standard of quality and trust.",
     featureList: [
-      "Clothing and linen care",
       "Welding and metal fabrication",
       "Gates, railings & window bars",
       "Custom structures and pieces",
+      "Spare parts & consumables",
     ],
     cta: "Learn more",
     imageLabel: "Our team and equipment",
@@ -316,18 +377,18 @@ const en: typeof fr = {
       "Two great families of services, with the same standard: careful work, delivered on time, at a fair price.",
     items: [
       {
-        key: "pressing",
-        icon: "shirt",
-        title: "Klass Pressing",
-        desc: "Washing, ironing and care for clothes and linen. Fast turnaround and attentive treatment of your fabrics.",
-        image: "/images/pressing-interior.png",
-      },
-      {
         key: "workshop",
         icon: "wrench",
         title: "Metalwork Workshop",
-        desc: "Welding and metal fabrication: gates, railings, window bars, metal structures and custom made pieces. ALUCAM partner for metalwork in Edea.",
+        desc: "Our core business: welding and metal fabrication — gates, railings, window bars, metal structures and custom made pieces. ALUCAM partner for metalwork in Edea.",
         image: "/images/service-welding1.jpg",
+      },
+      {
+        key: "pressing",
+        icon: "shirt",
+        title: "Klass Pressing",
+        desc: "Alongside the workshop: washing, ironing and care for clothes and linen. Fast turnaround and attentive treatment of your fabrics.",
+        image: "/images/pressing-interior.png",
       },
     ],
     workshopSub: {
@@ -363,6 +424,12 @@ const en: typeof fr = {
           tags: ["Stainless", "Aluminum", "Precision"],
         },
       ],
+    },
+    productsTeaser: {
+      eyebrow: "Spare parts",
+      title: "The workshop also sells parts and consumables",
+      subtitle: "Conduits, saw blades, discs, electrodes and gate accessories — available directly at the workshop.",
+      cta: "View spare parts",
     },
     ctaTitle: "A project in mind?",
     ctaSubtitle: "Tell us what you need and we will offer you a custom made solution.",
@@ -437,7 +504,7 @@ const en: typeof fr = {
   },
   footer: {
     about:
-      "Klass Sarl brings together several small businesses in Edea: pressing, metalwork, welding and metal fabrication.",
+      "Klass Sarl, metalwork workshop in Edea: welding, metal fabrication, spare parts — and Klass Pressing for your laundry.",
     quickLinks: "Quick links",
     servicesTitle: "Services",
     contactTitle: "Contact",
@@ -508,6 +575,59 @@ const en: typeof fr = {
     ctaTitle: "Want to know more?",
     ctaSubtitle: "Contact us or come meet us at the workshop.",
     ctaButton: "Contact us",
+  },
+  productsPage: {
+    title: "Spare parts",
+    subtitle:
+      "Beyond its custom fabrications, the Klass Sarl workshop sells spare parts and consumables for your equipment and metalwork projects.",
+    intro:
+      "Available directly at the workshop, Pongo neighborhood (30m from the Lycée Classique d'Edéa). Call us to check availability and prices.",
+    availability: "Available at the workshop",
+    askPrice: "Price on request",
+    orderTitle: "Looking for a specific part?",
+    orderSubtitle:
+      "Call us or send a message with the reference or a photo of the part: we will quickly tell you whether we have it or can order it.",
+    orderButton: "Request a part",
+    callButton: "Call the workshop",
+    note: "Photos are not contractual. Stock varies — contact us to confirm availability.",
+    items: [
+      {
+        name: "Yellow conduit",
+        desc: "Flexible yellow electrical conduit to protect cables in your installations.",
+        image: "/images/product-gaine-jaune.jpg",
+        category: "Electrical",
+      },
+      {
+        name: "Arivan saw blade",
+        desc: "Sturdy saw blades for cutting metal and wood, Arivan brand.",
+        image: "/images/product-lame-scie.jpg",
+        category: "Cutting",
+      },
+      {
+        name: "Cutting & grinding discs",
+        desc: "Abrasive discs for angle grinders: metal cutting and grinding.",
+        image: "/images/product-disques.jpg",
+        category: "Cutting",
+      },
+      {
+        name: "Welding electrodes",
+        desc: "Coated electrode rods for arc welding, several diameters.",
+        image: "/images/product-electrodes.jpg",
+        category: "Welding",
+      },
+      {
+        name: "Weld-on hinges",
+        desc: "Weld-on hinges and pivots for gates, metal doors and grilles.",
+        image: "/images/product-paumelles.jpg",
+        category: "Gates",
+      },
+      {
+        name: "Sliding gate rollers",
+        desc: "Rollers and wheels for sliding gates, with brackets and bearings.",
+        image: "/images/product-galets.jpg",
+        category: "Gates",
+      },
+    ],
   },
   blogPage: {
     title: "Klass Sarl Blog",

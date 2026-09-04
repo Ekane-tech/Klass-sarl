@@ -24,6 +24,7 @@ export function Header() {
   const links: { href: string; label: string; key: string }[] = [
     { href: "/", label: t.nav.home, key: "home" },
     { href: "/services", label: t.nav.services, key: "services" },
+    { href: "/products", label: t.nav.products, key: "products" },
     { href: "/about", label: t.nav.about, key: "about" },
     { href: "/blog", label: t.nav.blog, key: "blog" },
     { href: "/contact", label: t.nav.contact, key: "contact" },

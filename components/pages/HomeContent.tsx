@@ -196,7 +196,7 @@ export function HomeContent() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading
             light
-            eyebrow={t.services.items[1].title}
+            eyebrow={t.services.items[0].title}
             title={t.services.workshopSub.title}
           />
           <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

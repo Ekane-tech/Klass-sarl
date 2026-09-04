@@ -18,8 +18,9 @@ export function Footer() {
   ];
 
   const services = [
-    { href: "/services#pressing", label: t.services.items[0].title },
-    { href: "/services#workshop", label: t.services.items[1].title },
+    { href: "/services#workshop", label: t.services.items[0].title },
+    { href: "/products", label: t.nav.products },
+    { href: "/services#pressing", label: t.services.items[1].title },
     { href: "/services#workshop", label: t.services.workshopSub.items[1].title },
     { href: "/services#workshop", label: t.services.workshopSub.items[2].title },
   ];
