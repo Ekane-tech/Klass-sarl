@@ -61,6 +61,7 @@ export function ProductsContent() {
                       alt={p.name}
                       aspect="4/3"
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      imgClassName={p.image.includes("lame-scie") ? "object-contain" : ""}
                     />
                     <div className="flex flex-1 flex-col p-6">
                       <span className="inline-flex w-fit rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700">

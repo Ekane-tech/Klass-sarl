@@ -282,9 +282,9 @@ const fr = {
         category: "Électricité",
       },
       {
-        name: "Lame de scie Arivan",
-        desc: "Lames de scie robustes pour la coupe du métal et du bois, marque Arivan.",
-        image: "/images/product-lame-scie.jpg",
+        name: "Lame de scie à ruban",
+        desc: "Lames de scie robustes pour la coupe du métal et du bois.",
+        image: "/images/lame-scie.jpg",
         category: "Coupe",
       },
       {
@@ -598,9 +598,9 @@ const en: typeof fr = {
         category: "Electrical",
       },
       {
-        name: "Arivan saw blade",
-        desc: "Sturdy saw blades for cutting metal and wood, Arivan brand.",
-        image: "/images/product-lame-scie.jpg",
+        name: "Band saw blade",
+        desc: "Sturdy saw blades for cutting metal and wood.",
+        image: "/images/lame-scie.jpg",
         category: "Cutting",
       },
       {
