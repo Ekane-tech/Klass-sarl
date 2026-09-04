@@ -8,7 +8,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://klass-sarl.vercel.app"),
+  metadataBase: new URL(process.env.SITE_URL || "https://klass-sarl.vercel.app"),
   title: {
     default: "Klass Sarl — Pressing & Métallerie à Edéa",
     template: "%s — Klass Sarl",
@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     areaServed: "Littoral, Cameroun",
     openingHours: "Mo-Sa 07:30-19:00",
     priceRange: "$$",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://klass-sarl.vercel.app",
+    url: process.env.SITE_URL || "https://klass-sarl.vercel.app",
   };
 
   return (

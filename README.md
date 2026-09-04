@@ -90,7 +90,7 @@ To make submissions actually arrive in your inbox:
 - Server-rendered pages with per-page `metadata`.
 - Open Graph + Twitter cards, JSON-LD `LocalBusiness` structured data in `app/layout.tsx`.
 - `app/robots.ts` and `app/sitemap.ts`.
-- Set `NEXT_PUBLIC_SITE_URL` to your real domain for correct canonical URLs.
+- Set `SITE_URL` to your real domain for correct canonical URLs.
 
 ## 📞 Contact
 
