@@ -150,38 +150,41 @@ export function HomeContent() {
             title={t.services.title}
             subtitle={t.services.subtitle}
           />
-          <StaggerContainer className="mt-12 grid gap-6 md:grid-cols-2">
+          <StaggerContainer className="mt-12 grid items-stretch gap-6 md:grid-cols-2">
             {t.services.items.map((s) => (
-              <StaggerItem key={s.key}>
-                <HoverLift>
+              <StaggerItem key={s.key} className="h-full">
+                <HoverLift className="h-full">
                   <article
                     id={s.key}
-                    className="group overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                    className="group flex h-full flex-col overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
                   >
-                    <div className="relative">
+                    <div className="relative shrink-0">
                       <Img
                         src={s.image}
                         alt={s.title}
                         aspect="16/9"
                         sizes="(min-width: 768px) 50vw, 100vw"
                         className="transition duration-300 group-hover:scale-[1.02]"
+                        imgClassName="object-cover"
                       />
                       <span className="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white/90 text-brand-600 shadow">
                         <DynamicIcon name={s.icon} className="h-6 w-6" />
                       </span>
                     </div>
-                    <div className="p-6 sm:p-7">
+                    <div className="flex flex-1 flex-col p-6 sm:p-7">
                       <h3 className="font-display text-xl font-bold text-ink-900 sm:text-2xl">
                         {s.title}
                       </h3>
                       <p className="mt-2 leading-7 text-ink-600">{s.desc}</p>
-                      <Link
-                        href={`/services#${s.key}`}
-                        className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 transition hover:text-brand-500"
-                      >
-                        {t.blog.readMore}
-                        <ArrowRightIcon className="h-4 w-4" />
-                      </Link>
+                      <div className="mt-auto pt-4">
+                        <Link
+                          href={`/services#${s.key}`}
+                          className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 transition hover:text-brand-500"
+                        >
+                          {t.blog.readMore}
+                          <ArrowRightIcon className="h-4 w-4" />
+                        </Link>
+                      </div>
                     </div>
                   </article>
                 </HoverLift>
@@ -199,11 +202,11 @@ export function HomeContent() {
             eyebrow={t.services.items[0].title}
             title={t.services.workshopSub.title}
           />
-          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.services.workshopSub.items.map((w) => (
-              <StaggerItem key={w.title}>
-                <HoverLift>
-                  <div className="rounded-3xl border border-ink-700 bg-ink-800 p-6 transition hover:border-brand-500/60">
+              <StaggerItem key={w.title} className="h-full">
+                <HoverLift className="h-full">
+                  <div className="flex h-full flex-col rounded-3xl border border-ink-700 bg-ink-800 p-6 transition hover:border-brand-500/60">
                     <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400">
                       <DynamicIcon name={w.icon} className="h-6 w-6" />
                     </span>
@@ -225,11 +228,11 @@ export function HomeContent() {
             title={t.why.title}
             subtitle={t.why.subtitle}
           />
-          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.why.items.map((w) => (
-              <StaggerItem key={w.title}>
-                <HoverLift>
-                  <div className="rounded-3xl border border-ink-100 bg-ink-50 p-6 text-center">
+              <StaggerItem key={w.title} className="h-full">
+                <HoverLift className="h-full">
+                  <div className="flex h-full flex-col rounded-3xl border border-ink-100 bg-ink-50 p-6 text-center">
                     <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-600">
                       <DynamicIcon name={w.icon} className="h-7 w-7" />
                     </span>
@@ -247,11 +250,11 @@ export function HomeContent() {
       <section className="bg-ink-50 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading eyebrow={t.process.eyebrow} title={t.process.title} />
-          <StaggerContainer className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid grid-cols-2 items-stretch gap-4 sm:gap-6 lg:grid-cols-4">
             {t.process.items.map((p, i) => (
-              <StaggerItem key={p.title}>
-                <div className="relative rounded-3xl border border-ink-100 bg-white p-6">
-                  <span className="font-display text-4xl font-bold text-brand-200">{p.title}</span>
+              <StaggerItem key={p.title} className="h-full">
+                <div className="relative flex h-full flex-col rounded-3xl border border-ink-100 bg-white p-5 sm:p-6">
+                  <span className="font-display text-3xl font-bold text-brand-200 sm:text-4xl">{p.title}</span>
                   <p className="mt-3 text-sm leading-6 text-ink-600">{p.desc}</p>
                   {i < t.process.items.length - 1 && (
                     <ArrowRightIcon className="absolute right-4 top-1/2 hidden h-6 w-6 -translate-y-1/2 text-ink-200 lg:block" />
