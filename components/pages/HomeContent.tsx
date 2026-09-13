@@ -202,16 +202,16 @@ export function HomeContent() {
             eyebrow={t.services.items[0].title}
             title={t.services.workshopSub.title}
           />
-          <StaggerContainer className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid grid-cols-2 items-stretch gap-4 sm:gap-6 lg:grid-cols-4">
             {t.services.workshopSub.items.map((w) => (
               <StaggerItem key={w.title} className="h-full">
                 <HoverLift className="h-full">
-                  <div className="flex h-full flex-col rounded-3xl border border-ink-700 bg-ink-800 p-6 transition hover:border-brand-500/60">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400">
-                      <DynamicIcon name={w.icon} className="h-6 w-6" />
+                  <div className="flex h-full flex-col rounded-3xl border border-ink-700 bg-ink-800 p-4 transition hover:border-brand-500/60 sm:p-6">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400 sm:h-12 sm:w-12">
+                      <DynamicIcon name={w.icon} className="h-5 w-5 sm:h-6 sm:w-6" />
                     </span>
-                    <h3 className="mt-4 font-display text-lg font-bold">{w.title}</h3>
-                    <p className="mt-2 text-sm leading-6 text-ink-300">{w.desc}</p>
+                    <h3 className="mt-4 font-display text-base font-bold sm:text-lg">{w.title}</h3>
+                    <p className="mt-2 text-xs leading-5 text-ink-300 sm:text-sm sm:leading-6">{w.desc}</p>
                   </div>
                 </HoverLift>
               </StaggerItem>
@@ -228,16 +228,16 @@ export function HomeContent() {
             title={t.why.title}
             subtitle={t.why.subtitle}
           />
-          <StaggerContainer className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerContainer className="mt-12 grid grid-cols-2 items-stretch gap-4 sm:gap-6 lg:grid-cols-4">
             {t.why.items.map((w) => (
               <StaggerItem key={w.title} className="h-full">
                 <HoverLift className="h-full">
-                  <div className="flex h-full flex-col rounded-3xl border border-ink-100 bg-ink-50 p-6 text-center">
-                    <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-100 text-brand-600">
-                      <DynamicIcon name={w.icon} className="h-7 w-7" />
+                  <div className="flex h-full flex-col rounded-3xl border border-ink-100 bg-ink-50 p-4 text-center sm:p-6">
+                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-600 sm:h-14 sm:w-14">
+                      <DynamicIcon name={w.icon} className="h-6 w-6 sm:h-7 sm:w-7" />
                     </span>
-                    <h3 className="mt-4 font-display text-lg font-bold text-ink-900">{w.title}</h3>
-                    <p className="mt-2 text-sm leading-6 text-ink-500">{w.desc}</p>
+                    <h3 className="mt-4 font-display text-base font-bold text-ink-900 sm:text-lg">{w.title}</h3>
+                    <p className="mt-2 text-xs leading-5 text-ink-500 sm:text-sm sm:leading-6">{w.desc}</p>
                   </div>
                 </HoverLift>
               </StaggerItem>
