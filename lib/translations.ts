@@ -68,7 +68,7 @@ const fr = {
         icon: "shirt",
         title: "Klass Pressing",
         desc: "En complément : lavage, repassage et entretien du linge et des vêtements. Reprise rapide et soin attentif de vos tissus.",
-        image: "/images/pressing-interior.png",
+        image: "/images/pressing-interior.jpg",
       },
     ],
     workshopSub: {
@@ -670,7 +670,7 @@ const en: typeof fr = {
         icon: "shirt",
         title: "Klass Pressing",
         desc: "Alongside the workshop: washing, ironing and care for clothes and linen. Fast turnaround and attentive treatment of your fabrics.",
-        image: "/images/pressing-interior.png",
+        image: "/images/pressing-interior.jpg",
       },
     ],
     workshopSub: {

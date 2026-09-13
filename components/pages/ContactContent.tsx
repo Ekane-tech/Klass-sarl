@@ -149,7 +149,7 @@ export function ContactContent() {
                 <div className="overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-sm">
                   <div className="relative">
                     <Img
-                      src="/images/workshop-siege.png"
+                      src="/images/workshop-siege.jpg"
                       alt={t.contactPage.lyceeLabel}
                       aspect="4/3"
                       className="border-b border-ink-100"

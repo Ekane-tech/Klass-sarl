@@ -14,7 +14,7 @@ export const posts: Post[] = [
     slug: "conseils-entretien-pressing",
     date: "2026-07-18",
     category: "Pressing",
-    image: "/images/pressing-cloths.png",
+    image: "/images/pressing-cloths.jpg",
     fr: {
       title: "5 conseils pour bien entretenir votre linge à la maison",
       excerpt:
@@ -50,7 +50,7 @@ export const posts: Post[] = [
     slug: "soudure-fabrications-sur-mesure",
     date: "2026-06-14",
     category: "Métallerie",
-    image: "/images/blog-welding.png",
+    image: "/images/blog-welding.jpg",
     fr: {
       title: "Soudure et fabrications métalliques : que pouvez-vous commander ?",
       excerpt:
@@ -84,7 +84,7 @@ export const posts: Post[] = [
     slug: "entretien-gardes-corps-balcons",
     date: "2026-05-09",
     category: "Pressing",
-    image: "/images/blog-pressing.png",
+    image: "/images/blog-pressing.jpg",
     fr: {
       title: "Repassage professionnel : gagnez du temps chaque semaine",
       excerpt:

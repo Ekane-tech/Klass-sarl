@@ -20,7 +20,7 @@ export function HomeContent() {
       <section className="relative overflow-hidden bg-ink-900 text-white">
         <div className="absolute inset-0">
           <Img
-            src="/images/hero-workshop.png"
+            src="/images/hero-workshop.jpg"
             alt={t.hero.imageLabel}
             aspect="auto"
             className="h-full w-full opacity-40"
@@ -124,7 +124,7 @@ export function HomeContent() {
           <SlideIn direction="right">
             <div className="relative">
               <Img
-                src="/images/klass-office.png"
+                src="/images/klass-office.jpg"
                 alt={t.intro.imageLabel}
                 aspect="4/3"
                 className="rounded-3xl shadow-xl"
