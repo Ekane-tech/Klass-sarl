@@ -9,7 +9,7 @@ const fr = {
   nav: {
     home: "Accueil",
     services: "Services",
-    products: "Pièces de rechange",
+    products: "Usinage & fabrication",
     about: "À propos",
     blog: "Blog",
     contact: "Contact",
@@ -313,6 +313,193 @@ const fr = {
       },
     ],
   },
+  fabricationPage: {
+    title: "Usinage & fabrication métalliques",
+    subtitle:
+      "Apportez la pièce usée, cassée… ou votre plan. Nous fabriquons la pièce neuve, sur mesure, dans notre atelier d'Edéa.",
+    heroImage: "/images/fabrication/vis-sans-fin-avant-apres.jpg",
+    heroImageAlt: "Vis sans fin neuve fabriquée à côté de la pièce usée",
+    heroCaption: "Vis sans fin : pièce neuve fabriquée d'après la pièce usée",
+    pillarsTitle: "Trois façons de vous servir",
+    pillars: [
+      {
+        title: "Reproduction de pièces",
+        desc: "Vous apportez la pièce usée ou cassée : nous la mesurons et fabriquons une pièce neuve identique — flasques, poulies, vis sans fin, accouplements…",
+        image: "/images/fabrication/flasque-reducteur-avant-apres.jpg",
+        imageAlt: "Flasque de réducteur neuve fabriquée d'après l'ancienne pièce",
+      },
+      {
+        title: "Fabrication sur plan",
+        desc: "Vous fournissez votre dessin technique coté : nous usinons la pièce conforme, dans la matière demandée (acier, bronze, aluminium, fonte).",
+        image: "/images/fabrication/fabrication-sur-plan.jpg",
+        imageAlt: "Pièce usinée posée sur son plan technique coté",
+      },
+      {
+        title: "Notre atelier",
+        desc: "Tour avec lunette fixe pour les grandes pièces, fraiseuse pour le taillage de pignons, filetages à pas carré, chariotage conique…",
+        image: "/images/fabrication/fraiseuse-atelier.jpg",
+        imageAlt: "Fraiseuse universelle de l'atelier Klass Sarl",
+      },
+    ],
+    galleryTitle: "Nos réalisations",
+    gallerySubtitle:
+      "Un aperçu des pièces fabriquées dans notre atelier pour les industries, scieries et particuliers de la région.",
+    families: [
+      {
+        name: "Pignons & crémaillères",
+        items: [
+          {
+            name: "Pignon à denture droite",
+            image: "/images/fabrication/pignon-denture-droite.jpg",
+          },
+          {
+            name: "Roue dentée avec rainure de clavette",
+            image: "/images/fabrication/roue-dentee-clavette.jpg",
+          },
+          {
+            name: "Pignon à chevrons",
+            image: "/images/fabrication/pignon-chevrons.jpg",
+          },
+          {
+            name: "Crémaillère pour colonne de toupie",
+            image: "/images/fabrication/cremaillere-toupie.jpg",
+          },
+        ],
+      },
+      {
+        name: "Arbres & axes",
+        items: [
+          {
+            name: "Axes épaulés filetés",
+            image: "/images/fabrication/axes-epaules-filetes.jpg",
+          },
+          {
+            name: "Axes de connexion",
+            image: "/images/fabrication/axes-connexion.jpg",
+          },
+          {
+            name: "Arbre claveté pour scie",
+            image: "/images/fabrication/arbre-clavete.jpg",
+          },
+          {
+            name: "Arbres à flasque",
+            image: "/images/fabrication/arbres-flasque.jpg",
+          },
+          {
+            name: "Galets de vilebrequin sur tour",
+            image: "/images/fabrication/vilebrequin-tour.jpg",
+          },
+        ],
+      },
+      {
+        name: "Poulies",
+        items: [
+          {
+            name: "Poulies à gorges",
+            image: "/images/fabrication/poulies-gorges.jpg",
+          },
+          {
+            name: "Poulie en aluminium",
+            image: "/images/fabrication/poulie-aluminium.jpg",
+          },
+          {
+            name: "Poulie à double gorge en acier",
+            image: "/images/fabrication/poulie-double-gorge.jpg",
+          },
+        ],
+      },
+      {
+        name: "Vis, écrous & filetages",
+        items: [
+          {
+            name: "Filetage à pas carré",
+            image: "/images/fabrication/filetage-pas-carre.jpg",
+          },
+          {
+            name: "Vis-écrou avec roulement",
+            image: "/images/fabrication/vis-ecrou.jpg",
+          },
+          {
+            name: "Écrou en bronze à forme prismatique",
+            image: "/images/fabrication/ecrou-bronze.jpg",
+          },
+          {
+            name: "Écrous en acier à épaulement",
+            image: "/images/fabrication/ecrous-acier.jpg",
+          },
+        ],
+      },
+      {
+        name: "Manchons, accouplements & flasques",
+        items: [
+          {
+            name: "Manchons d'accouplement en fonte",
+            image: "/images/fabrication/manchons-fonte.jpg",
+          },
+          {
+            name: "Manchon à bride",
+            image: "/images/fabrication/manchon-bride.jpg",
+          },
+          {
+            name: "Flasques neuves d'après pièce usée",
+            image: "/images/fabrication/flasques.jpg",
+          },
+          {
+            name: "Moyeu à bride avec pignon hélicoïdal",
+            image: "/images/fabrication/moyeu-bride-pignon.jpg",
+          },
+        ],
+      },
+      {
+        name: "Fabrication soudée & ensembles",
+        items: [
+          {
+            name: "Machine à écraser",
+            image: "/images/fabrication/machine-ecraser.jpg",
+          },
+          {
+            name: "Ensemble monté : vis-écrou, paliers et poulie",
+            image: "/images/fabrication/ensemble-assemble.jpg",
+          },
+          {
+            name: "Disques à fentes pour scie",
+            image: "/images/fabrication/disques-fentes.jpg",
+          },
+          {
+            name: "Billettes de placage",
+            image: "/images/fabrication/billettes-placage.jpg",
+          },
+        ],
+      },
+    ],
+    processTitle: "Comment ça se passe",
+    processSteps: [
+      {
+        title: "1. Vous nous contactez",
+        desc: "Apportez la pièce à l'atelier, ou envoyez une photo ou votre plan par WhatsApp.",
+      },
+      {
+        title: "2. Devis rapide",
+        desc: "Nous vous confirmons la faisabilité, le délai et le prix.",
+      },
+      {
+        title: "3. Fabrication",
+        desc: "Usinage sur tour et fraiseuse, contrôle des cotes à chaque étape.",
+      },
+      {
+        title: "4. Livraison",
+        desc: "Vous récupérez une pièce prête à monter, conforme à l'original ou au plan.",
+      },
+    ],
+    partsTitle: "Pièces de rechange & consommables",
+    partsSubtitle:
+      "L'atelier vend aussi des pièces de rechange et des consommables, disponibles directement au quartier Pongo.",
+    ctaTitle: "Une pièce à refaire ?",
+    ctaSubtitle:
+      "Envoyez-nous une photo de votre pièce usée ou votre plan : nous vous répondons rapidement avec un délai et un prix.",
+    ctaButton: "Demander un devis",
+    callButton: "Appeler l'atelier",
+  },
   notFound: {
     title: "Page introuvable",
     text: "La page que vous cherchez n'existe pas.",
@@ -329,7 +516,7 @@ const en: typeof fr = {
   nav: {
     home: "Home",
     services: "Services",
-    products: "Spare parts",
+    products: "Machining & fabrication",
     about: "About",
     blog: "Blog",
     contact: "Contact",
@@ -628,6 +815,193 @@ const en: typeof fr = {
         category: "Gates",
       },
     ],
+  },
+  fabricationPage: {
+    title: "Machining & metal fabrication",
+    subtitle:
+      "Bring the worn or broken part… or your drawing. We machine the new part, made to measure, in our Edea workshop.",
+    heroImage: "/images/fabrication/vis-sans-fin-avant-apres.jpg",
+    heroImageAlt: "Newly machined worm screw next to the worn original",
+    heroCaption: "Worm screw: new part machined from the worn original",
+    pillarsTitle: "Three ways we can help",
+    pillars: [
+      {
+        title: "Part reproduction",
+        desc: "Bring the worn or broken part: we measure it and machine an identical new one — flanges, pulleys, worm screws, couplings…",
+        image: "/images/fabrication/flasque-reducteur-avant-apres.jpg",
+        imageAlt: "New gearbox flange machined from the old part",
+      },
+      {
+        title: "Made from your drawing",
+        desc: "Provide your dimensioned technical drawing: we machine the part to spec, in the requested material (steel, bronze, aluminum, cast iron).",
+        image: "/images/fabrication/fabrication-sur-plan.jpg",
+        imageAlt: "Machined part resting on its dimensioned technical drawing",
+      },
+      {
+        title: "Our workshop",
+        desc: "Lathe with fixed steady rest for large parts, milling machine for gear cutting, square-thread cutting, taper turning…",
+        image: "/images/fabrication/fraiseuse-atelier.jpg",
+        imageAlt: "Universal milling machine at the Klass Sarl workshop",
+      },
+    ],
+    galleryTitle: "Our work",
+    gallerySubtitle:
+      "A glimpse of the parts machined in our workshop for industries, sawmills and individuals across the region.",
+    families: [
+      {
+        name: "Gears & racks",
+        items: [
+          {
+            name: "Spur gear",
+            image: "/images/fabrication/pignon-denture-droite.jpg",
+          },
+          {
+            name: "Gear wheel with keyway",
+            image: "/images/fabrication/roue-dentee-clavette.jpg",
+          },
+          {
+            name: "Herringbone gear",
+            image: "/images/fabrication/pignon-chevrons.jpg",
+          },
+          {
+            name: "Rack for spindle-moulder column",
+            image: "/images/fabrication/cremaillere-toupie.jpg",
+          },
+        ],
+      },
+      {
+        name: "Shafts & pins",
+        items: [
+          {
+            name: "Stepped threaded shafts",
+            image: "/images/fabrication/axes-epaules-filetes.jpg",
+          },
+          {
+            name: "Connecting shafts",
+            image: "/images/fabrication/axes-connexion.jpg",
+          },
+          {
+            name: "Keyed shaft for saw",
+            image: "/images/fabrication/arbre-clavete.jpg",
+          },
+          {
+            name: "Flanged shafts",
+            image: "/images/fabrication/arbres-flasque.jpg",
+          },
+          {
+            name: "Crankshaft rollers on the lathe",
+            image: "/images/fabrication/vilebrequin-tour.jpg",
+          },
+        ],
+      },
+      {
+        name: "Pulleys",
+        items: [
+          {
+            name: "V-belt pulleys",
+            image: "/images/fabrication/poulies-gorges.jpg",
+          },
+          {
+            name: "Aluminum pulley",
+            image: "/images/fabrication/poulie-aluminium.jpg",
+          },
+          {
+            name: "Steel double-groove pulley",
+            image: "/images/fabrication/poulie-double-gorge.jpg",
+          },
+        ],
+      },
+      {
+        name: "Screws, nuts & threads",
+        items: [
+          {
+            name: "Square thread cutting",
+            image: "/images/fabrication/filetage-pas-carre.jpg",
+          },
+          {
+            name: "Screw & nut with bearing",
+            image: "/images/fabrication/vis-ecrou.jpg",
+          },
+          {
+            name: "Prismatic bronze nut",
+            image: "/images/fabrication/ecrou-bronze.jpg",
+          },
+          {
+            name: "Shouldered steel nuts",
+            image: "/images/fabrication/ecrous-acier.jpg",
+          },
+        ],
+      },
+      {
+        name: "Sleeves, couplings & flanges",
+        items: [
+          {
+            name: "Cast-iron coupling sleeves",
+            image: "/images/fabrication/manchons-fonte.jpg",
+          },
+          {
+            name: "Flanged sleeve",
+            image: "/images/fabrication/manchon-bride.jpg",
+          },
+          {
+            name: "New flanges from a worn part",
+            image: "/images/fabrication/flasques.jpg",
+          },
+          {
+            name: "Flanged hub with helical pinion",
+            image: "/images/fabrication/moyeu-bride-pignon.jpg",
+          },
+        ],
+      },
+      {
+        name: "Welded fabrication & assemblies",
+        items: [
+          {
+            name: "Crushing machine",
+            image: "/images/fabrication/machine-ecraser.jpg",
+          },
+          {
+            name: "Assembled unit: screw-nut, bearings and pulley",
+            image: "/images/fabrication/ensemble-assemble.jpg",
+          },
+          {
+            name: "Slotted discs for saw",
+            image: "/images/fabrication/disques-fentes.jpg",
+          },
+          {
+            name: "Cladding billets",
+            image: "/images/fabrication/billettes-placage.jpg",
+          },
+        ],
+      },
+    ],
+    processTitle: "How it works",
+    processSteps: [
+      {
+        title: "1. Contact us",
+        desc: "Bring the part to the workshop, or send a photo or your drawing via WhatsApp.",
+      },
+      {
+        title: "2. Quick quote",
+        desc: "We confirm feasibility, lead time and price.",
+      },
+      {
+        title: "3. Machining",
+        desc: "Turning and milling, with dimensions checked at every step.",
+      },
+      {
+        title: "4. Delivery",
+        desc: "You collect a ready-to-fit part, matching the original or the drawing.",
+      },
+    ],
+    partsTitle: "Spare parts & consumables",
+    partsSubtitle:
+      "The workshop also sells spare parts and consumables, available directly in the Pongo neighborhood.",
+    ctaTitle: "A part to remake?",
+    ctaSubtitle:
+      "Send us a photo of your worn part or your drawing: we reply quickly with a lead time and a price.",
+    ctaButton: "Request a quote",
+    callButton: "Call the workshop",
   },
   blogPage: {
     title: "Klass Sarl Blog",
