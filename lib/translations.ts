@@ -276,10 +276,10 @@ const fr = {
     note: "Photos non contractuelles. Le stock varie — contactez-nous pour confirmer la disponibilité.",
     items: [
       {
-        name: "Gaine jaune",
-        desc: "Gaine électrique jaune souple pour la protection des câbles dans vos installations.",
+        name: "Gaine guide-fil jaune",
+        desc: "Gaine guide-fil jaune pour torche de soudage MIG/MAG : guide le fil de soudure à l'intérieur du faisceau de la torche.",
         image: "/images/product-gaine-jaune.jpg",
-        category: "Électricité",
+        category: "Soudure",
       },
       {
         name: "Lame de scie à ruban",
@@ -873,10 +873,10 @@ const en: typeof fr = {
     note: "Photos are not contractual. Stock varies — contact us to confirm availability.",
     items: [
       {
-        name: "Yellow conduit",
-        desc: "Flexible yellow electrical conduit to protect cables in your installations.",
+        name: "Yellow wire liner",
+        desc: "Yellow wire liner for MIG/MAG welding torches: guides the welding wire inside the torch cable assembly.",
         image: "/images/product-gaine-jaune.jpg",
-        category: "Electrical",
+        category: "Welding",
       },
       {
         name: "Band saw blade",
