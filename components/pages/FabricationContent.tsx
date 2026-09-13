@@ -52,6 +52,13 @@ export function FabricationContent() {
                   <PhoneIcon className="h-4 w-4" />
                   {f.callButton}
                 </a>
+                <a
+                  href="#pieces-de-rechange"
+                  className="inline-flex items-center gap-2 rounded-full border border-brand-500 px-7 py-3.5 text-sm font-semibold text-brand-400 transition hover:bg-brand-600 hover:text-white"
+                >
+                  {f.partsButton}
+                  <span aria-hidden="true">↓</span>
+                </a>
               </div>
             </SlideUp>
           </FadeIn>
@@ -62,7 +69,8 @@ export function FabricationContent() {
                 alt={f.heroImageAlt}
                 aspect="4/3"
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="rounded-3xl"
+                className="rounded-3xl bg-ink-800"
+                imgClassName="object-contain"
                 priority
               />
               <figcaption className="mt-3 text-center text-xs text-ink-400">
@@ -91,6 +99,8 @@ export function FabricationContent() {
                       alt={p.imageAlt}
                       aspect="4/3"
                       sizes="(min-width: 768px) 33vw, 100vw"
+                      className="bg-ink-100"
+                      imgClassName="object-contain"
                     />
                     <div className="flex flex-1 flex-col p-6">
                       <h3 className="font-display text-lg font-bold text-ink-900">
@@ -138,6 +148,8 @@ export function FabricationContent() {
                           alt={item.name}
                           aspect="1/1"
                           sizes="(min-width: 1024px) 25vw, 50vw"
+                          className="bg-ink-100"
+                          imgClassName="object-contain"
                         />
                         <figcaption className="flex flex-1 items-center p-3 text-xs font-medium leading-5 text-ink-700 sm:p-4 sm:text-sm">
                           {item.name}
@@ -178,7 +190,7 @@ export function FabricationContent() {
       </section>
 
       {/* Spare parts & consumables */}
-      <section className="bg-ink-50 py-16 sm:py-20">
+      <section id="pieces-de-rechange" className="scroll-mt-24 bg-ink-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <FadeIn>
             <h2 className="text-center font-display text-3xl font-bold text-ink-900">

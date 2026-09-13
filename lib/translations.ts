@@ -588,6 +588,7 @@ const fr = {
     partsTitle: "Pièces de rechange & consommables",
     partsSubtitle:
       "L'atelier vend aussi des pièces de rechange et des consommables, disponibles directement au quartier Pongo.",
+    partsButton: "Voir les pièces de rechange",
     ctaTitle: "Une pièce à refaire ?",
     ctaSubtitle:
       "Envoyez-nous une photo de votre pièce usée ou votre plan : nous vous répondons rapidement avec un délai et un prix.",
@@ -1185,6 +1186,7 @@ const en: typeof fr = {
     partsTitle: "Spare parts & consumables",
     partsSubtitle:
       "The workshop also sells spare parts and consumables, available directly in the Pongo neighborhood.",
+    partsButton: "See spare parts",
     ctaTitle: "A part to remake?",
     ctaSubtitle:
       "Send us a photo of your worn part or your drawing: we reply quickly with a lead time and a price.",
