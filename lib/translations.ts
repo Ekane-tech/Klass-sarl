@@ -349,8 +349,8 @@ const fr = {
       {
         title: "Réalisation de vos projets",
         desc: "Vous avez une idée ou un projet : nous concevons et fabriquons la structure ou la machine qu'il vous faut, de A à Z — châssis, trémies, ensembles mécano-soudés.",
-        image: "/images/fabrication/machine-ecraser.jpg",
-        imageAlt: "Machine à écraser conçue et fabriquée par l'atelier Klass Sarl",
+        image: "/images/fabrication/fraiseuse-atelier.jpg",
+        imageAlt: "Fraiseuse universelle de l'atelier Klass Sarl",
       },
     ],
     galleryTitle: "Nos réalisations",
@@ -946,8 +946,8 @@ const en: typeof fr = {
       {
         title: "Building your projects",
         desc: "You have an idea or a project: we design and build the structure or machine you need, from A to Z — frames, hoppers, welded assemblies.",
-        image: "/images/fabrication/machine-ecraser.jpg",
-        imageAlt: "Crushing machine designed and built by the Klass Sarl workshop",
+        image: "/images/fabrication/fraiseuse-atelier.jpg",
+        imageAlt: "Universal milling machine at the Klass Sarl workshop",
       },
     ],
     galleryTitle: "Our work",
