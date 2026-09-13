@@ -335,10 +335,10 @@ const fr = {
         imageAlt: "Pièce usinée posée sur son plan technique coté",
       },
       {
-        title: "Notre atelier",
-        desc: "Tour avec lunette fixe pour les grandes pièces, fraiseuse pour le taillage de pignons, filetages à pas carré, chariotage conique…",
-        image: "/images/fabrication/fraiseuse-atelier.jpg",
-        imageAlt: "Fraiseuse universelle de l'atelier Klass Sarl",
+        title: "Réalisation de vos projets",
+        desc: "Vous avez une idée ou un projet : nous concevons et fabriquons la structure ou la machine qu'il vous faut, de A à Z — châssis, trémies, ensembles mécano-soudés.",
+        image: "/images/fabrication/machine-ecraser.jpg",
+        imageAlt: "Machine à écraser conçue et fabriquée par l'atelier Klass Sarl",
       },
     ],
     galleryTitle: "Nos réalisations",
@@ -386,13 +386,17 @@ const fr = {
             image: "/images/fabrication/arbres-flasque.jpg",
           },
           {
+            name: "Lot d'axes épaulés",
+            image: "/images/fabrication/lot-axes-filetes.jpg",
+          },
+          {
             name: "Galets de vilebrequin sur tour",
             image: "/images/fabrication/vilebrequin-tour.jpg",
           },
         ],
       },
       {
-        name: "Poulies",
+        name: "Poulies & galets",
         items: [
           {
             name: "Poulies à gorges",
@@ -403,8 +407,20 @@ const fr = {
             image: "/images/fabrication/poulie-aluminium.jpg",
           },
           {
+            name: "Poulie aluminium — vue de face",
+            image: "/images/fabrication/poulie-alu-face.jpg",
+          },
+          {
             name: "Poulie à double gorge en acier",
             image: "/images/fabrication/poulie-double-gorge.jpg",
+          },
+          {
+            name: "Poulie à double gorge en aluminium",
+            image: "/images/fabrication/poulie-double-gorge-alu.jpg",
+          },
+          {
+            name: "Galet à gorge",
+            image: "/images/fabrication/galet-gorge.jpg",
           },
         ],
       },
@@ -441,12 +457,49 @@ const fr = {
             image: "/images/fabrication/manchon-bride.jpg",
           },
           {
+            name: "Manchons et bagues usinés",
+            image: "/images/fabrication/manchons-bagues.jpg",
+          },
+          {
             name: "Flasques neuves d'après pièce usée",
             image: "/images/fabrication/flasques.jpg",
           },
           {
-            name: "Moyeu à bride avec pignon hélicoïdal",
+            name: "Flasques à trous oblongs",
+            image: "/images/fabrication/flasques-trous-oblongs.jpg",
+          },
+          {
+            name: "Disques et flasques usinés",
+            image: "/images/fabrication/disques-flasques-usines.jpg",
+          },
+          {
+            name: "Flasque de réducteur en aluminium",
+            image: "/images/fabrication/flasque-reducteur-alu.jpg",
+          },
+          {
+            name: "Matière brute et pièce fabriquée",
+            image: "/images/fabrication/brut-et-fini.jpg",
+          },
+        ],
+      },
+      {
+        name: "Fabrication sur plan",
+        items: [
+          {
+            name: "Plan technique du client",
+            image: "/images/fabrication/plan-moyeu-bride.jpg",
+          },
+          {
+            name: "Moyeu à bride avec pignon hélicoïdal, fabriqué d'après ce plan",
             image: "/images/fabrication/moyeu-bride-pignon.jpg",
+          },
+          {
+            name: "Pièce usinée conforme au dessin",
+            image: "/images/fabrication/piece-sur-plan.jpg",
+          },
+          {
+            name: "Fabrication d'après votre dessin coté",
+            image: "/images/fabrication/fabrication-sur-plan.jpg",
           },
         ],
       },
@@ -468,6 +521,35 @@ const fr = {
           {
             name: "Billettes de placage",
             image: "/images/fabrication/billettes-placage.jpg",
+          },
+        ],
+      },
+      {
+        name: "Au cœur de l'atelier",
+        items: [
+          {
+            name: "Usinage avec lunette fixe",
+            image: "/images/fabrication/usinage-lunette.jpg",
+          },
+          {
+            name: "Chariotage conique de grande pièce",
+            image: "/images/fabrication/chariotage-conique.jpg",
+          },
+          {
+            name: "Filetage à pas carré sur arbre long",
+            image: "/images/fabrication/filetage-arbre-long.jpg",
+          },
+          {
+            name: "Arbre en cours d'usinage sur le tour",
+            image: "/images/fabrication/usinage-arbre-tour.jpg",
+          },
+          {
+            name: "Fraiseuse — taillage de pignons",
+            image: "/images/fabrication/fraiseuse-atelier.jpg",
+          },
+          {
+            name: "Fraise à surfacer à plaquettes carbure",
+            image: "/images/fabrication/fraise-surfacer.jpg",
           },
         ],
       },
@@ -838,10 +920,10 @@ const en: typeof fr = {
         imageAlt: "Machined part resting on its dimensioned technical drawing",
       },
       {
-        title: "Our workshop",
-        desc: "Lathe with fixed steady rest for large parts, milling machine for gear cutting, square-thread cutting, taper turning…",
-        image: "/images/fabrication/fraiseuse-atelier.jpg",
-        imageAlt: "Universal milling machine at the Klass Sarl workshop",
+        title: "Building your projects",
+        desc: "You have an idea or a project: we design and build the structure or machine you need, from A to Z — frames, hoppers, welded assemblies.",
+        image: "/images/fabrication/machine-ecraser.jpg",
+        imageAlt: "Crushing machine designed and built by the Klass Sarl workshop",
       },
     ],
     galleryTitle: "Our work",
@@ -889,13 +971,17 @@ const en: typeof fr = {
             image: "/images/fabrication/arbres-flasque.jpg",
           },
           {
+            name: "Batch of stepped pins",
+            image: "/images/fabrication/lot-axes-filetes.jpg",
+          },
+          {
             name: "Crankshaft rollers on the lathe",
             image: "/images/fabrication/vilebrequin-tour.jpg",
           },
         ],
       },
       {
-        name: "Pulleys",
+        name: "Pulleys & rollers",
         items: [
           {
             name: "V-belt pulleys",
@@ -906,8 +992,20 @@ const en: typeof fr = {
             image: "/images/fabrication/poulie-aluminium.jpg",
           },
           {
+            name: "Aluminum pulley — front view",
+            image: "/images/fabrication/poulie-alu-face.jpg",
+          },
+          {
             name: "Steel double-groove pulley",
             image: "/images/fabrication/poulie-double-gorge.jpg",
+          },
+          {
+            name: "Aluminum double-groove pulley",
+            image: "/images/fabrication/poulie-double-gorge-alu.jpg",
+          },
+          {
+            name: "Grooved roller",
+            image: "/images/fabrication/galet-gorge.jpg",
           },
         ],
       },
@@ -944,12 +1042,49 @@ const en: typeof fr = {
             image: "/images/fabrication/manchon-bride.jpg",
           },
           {
+            name: "Machined sleeves and rings",
+            image: "/images/fabrication/manchons-bagues.jpg",
+          },
+          {
             name: "New flanges from a worn part",
             image: "/images/fabrication/flasques.jpg",
           },
           {
-            name: "Flanged hub with helical pinion",
+            name: "Flanges with oblong holes",
+            image: "/images/fabrication/flasques-trous-oblongs.jpg",
+          },
+          {
+            name: "Machined discs and flanges",
+            image: "/images/fabrication/disques-flasques-usines.jpg",
+          },
+          {
+            name: "Aluminum gearbox flange",
+            image: "/images/fabrication/flasque-reducteur-alu.jpg",
+          },
+          {
+            name: "Raw stock and finished part",
+            image: "/images/fabrication/brut-et-fini.jpg",
+          },
+        ],
+      },
+      {
+        name: "Made from your drawing",
+        items: [
+          {
+            name: "Customer's technical drawing",
+            image: "/images/fabrication/plan-moyeu-bride.jpg",
+          },
+          {
+            name: "Flanged hub with helical pinion, machined from this drawing",
             image: "/images/fabrication/moyeu-bride-pignon.jpg",
+          },
+          {
+            name: "Part machined to the drawing",
+            image: "/images/fabrication/piece-sur-plan.jpg",
+          },
+          {
+            name: "Manufactured from your dimensioned drawing",
+            image: "/images/fabrication/fabrication-sur-plan.jpg",
           },
         ],
       },
@@ -971,6 +1106,35 @@ const en: typeof fr = {
           {
             name: "Cladding billets",
             image: "/images/fabrication/billettes-placage.jpg",
+          },
+        ],
+      },
+      {
+        name: "Inside the workshop",
+        items: [
+          {
+            name: "Turning with a fixed steady rest",
+            image: "/images/fabrication/usinage-lunette.jpg",
+          },
+          {
+            name: "Taper turning of a large workpiece",
+            image: "/images/fabrication/chariotage-conique.jpg",
+          },
+          {
+            name: "Square-thread cutting on a long shaft",
+            image: "/images/fabrication/filetage-arbre-long.jpg",
+          },
+          {
+            name: "Shaft being machined on the lathe",
+            image: "/images/fabrication/usinage-arbre-tour.jpg",
+          },
+          {
+            name: "Milling machine — gear cutting",
+            image: "/images/fabrication/fraiseuse-atelier.jpg",
+          },
+          {
+            name: "Indexable-insert face milling cutter",
+            image: "/images/fabrication/fraise-surfacer.jpg",
           },
         ],
       },
