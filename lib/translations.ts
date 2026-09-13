@@ -311,6 +311,18 @@ const fr = {
         image: "/images/product-galets.jpg",
         category: "Portails",
       },
+      {
+        name: "Torche de soudage MIG/MAG",
+        desc: "Torche complète avec faisceau et connecteur Euro pour postes de soudure semi-automatiques.",
+        image: "/images/product-torche-soudage.jpg",
+        category: "Soudure",
+      },
+      {
+        name: "Consommables de torche MIG",
+        desc: "Tubes contact, buses de gaz, supports de tube, diffuseurs céramique et cols de cygne pour torches MIG/MAG.",
+        image: "/images/product-consommables-torche.jpg",
+        category: "Soudure",
+      },
     ],
   },
   fabricationPage: {
@@ -895,6 +907,18 @@ const en: typeof fr = {
         desc: "Rollers and wheels for sliding gates, with brackets and bearings.",
         image: "/images/product-galets.jpg",
         category: "Gates",
+      },
+      {
+        name: "MIG/MAG welding torch",
+        desc: "Complete torch with cable assembly and Euro connector for semi-automatic welding machines.",
+        image: "/images/product-torche-soudage.jpg",
+        category: "Welding",
+      },
+      {
+        name: "MIG torch consumables",
+        desc: "Contact tips, gas nozzles, tip holders, ceramic diffusers and swan necks for MIG/MAG torches.",
+        image: "/images/product-consommables-torche.jpg",
+        category: "Welding",
       },
     ],
   },
