@@ -98,7 +98,7 @@ const fr = {
           tags: ["Acier", "Fabrication", "Finition propre"],
         },
         {
-          icon: "sparkles",
+          icon: "plug-zap",
           title: "Soudure TIG (argon)",
           desc: "La technique la plus précise, sous gaz argon, pour l'inox, l'aluminium et les finitions soignées de garde-corps et mobilier métallique.",
           tags: ["Inox", "Aluminium", "Précision"],
@@ -127,7 +127,7 @@ const fr = {
     title: "L'exigence du travail bien fait",
     subtitle: "Des valeurs simples qui font la différence au quotidien.",
     items: [
-      { icon: "hammer", title: "Qualité durable", desc: "Des matériaux et un savoir-faire qui tiennent dans le temps." },
+      { icon: "shield", title: "Qualité durable", desc: "Des matériaux et un savoir-faire qui tiennent dans le temps." },
       { icon: "timer", title: "Respect des délais", desc: "Nous nous engageons sur des dates et nous les tenons." },
       { icon: "handshake", title: "Prix justes", desc: "Des devis clairs et honnêtes, sans mauvaise surprise." },
       { icon: "map-pin", title: "Proche de vous", desc: "Basés à Edéa, nous servons toute la région du Littoral." },
@@ -700,7 +700,7 @@ const en: typeof fr = {
           tags: ["Steel", "Fabrication", "Clean finish"],
         },
         {
-          icon: "sparkles",
+          icon: "plug-zap",
           title: "TIG welding (argon)",
           desc: "The most precise technique, under argon gas, for stainless steel, aluminum and refined finishes of railings and metal furniture.",
           tags: ["Stainless", "Aluminum", "Precision"],
@@ -729,7 +729,7 @@ const en: typeof fr = {
     title: "The standard of a job well done",
     subtitle: "Simple values that make all the difference every day.",
     items: [
-      { icon: "hammer", title: "Lasting quality", desc: "Materials and craftsmanship that stand the test of time." },
+      { icon: "shield", title: "Lasting quality", desc: "Materials and craftsmanship that stand the test of time." },
       { icon: "timer", title: "On-time delivery", desc: "We commit to dates and we meet them." },
       { icon: "handshake", title: "Fair prices", desc: "Clear, honest quotes with no surprises." },
       { icon: "map-pin", title: "Close to you", desc: "Based in Edea, we serve the whole Littoral region." },
