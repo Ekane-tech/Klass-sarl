@@ -43,7 +43,7 @@ export function ContactContent() {
       <section className="relative overflow-hidden bg-ink-900 py-16 text-white sm:py-20">
         <div className="absolute inset-0">
           <Img
-            src="/images/Contact-hero.jpg"
+            src="/images/contact-hero.jpg"
             alt={t.contactPage.title}
             aspect="auto"
             className="h-full w-full opacity-30"
