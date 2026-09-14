@@ -319,14 +319,14 @@ const fr = {
       },
       {
         name: "Consommables de torche MIG",
-        desc: "Tubes contact, buses de gaz, supports de tube, diffuseurs céramique et cols de cygne pour torches MIG/MAG.",
-        image: "/images/product-consommables-torche.jpg",
+        desc: "Buses de gaz, supports de tube, diffuseurs céramique pour torches MIG/MAG.",
+        image: "/images/product-consommables-torches.jpg",
         category: "Soudure",
       },
     ],
   },
   fabricationPage: {
-    title: "Usinage & fabrication métalliques",
+    title: "Usinage & fabrication mécanique",
     subtitle:
       "Apportez la pièce usée, cassée… ou votre plan. Nous fabriquons la pièce neuve, sur mesure, dans notre atelier d'Edéa.",
     heroImage: "/images/fabrication/vis-sans-fin-avant-apres.jpg",
@@ -394,15 +394,11 @@ const fr = {
             image: "/images/fabrication/arbre-clavete.jpg",
           },
           {
-            name: "Arbres à flasque",
+            name: "Vis sans fin, pas à gauche, pas à droite",
             image: "/images/fabrication/arbres-flasque.jpg",
           },
           {
-            name: "Lot d'axes épaulés",
-            image: "/images/fabrication/lot-axes-filetes.jpg",
-          },
-          {
-            name: "Galets de vilebrequin sur tour",
+            name: "Usinage de vilebrequin sur tour",
             image: "/images/fabrication/vilebrequin-tour.jpg",
           },
         ],
@@ -415,11 +411,11 @@ const fr = {
             image: "/images/fabrication/poulies-gorges.jpg",
           },
           {
-            name: "Poulie en aluminium",
+            name: "Poulie plate en aluminium",
             image: "/images/fabrication/poulie-aluminium.jpg",
           },
           {
-            name: "Poulie aluminium — vue de face",
+            name: "Poulie plate en aluminium — vue de face",
             image: "/images/fabrication/poulie-alu-face.jpg",
           },
           {
@@ -431,7 +427,7 @@ const fr = {
             image: "/images/fabrication/poulie-double-gorge-alu.jpg",
           },
           {
-            name: "Galet à gorge",
+            name: "Galet",
             image: "/images/fabrication/galet-gorge.jpg",
           },
         ],
@@ -477,7 +473,7 @@ const fr = {
             image: "/images/fabrication/flasques.jpg",
           },
           {
-            name: "Flasques à trous oblongs",
+            name: "Manchons avec trous oblongs",
             image: "/images/fabrication/flasques-trous-oblongs.jpg",
           },
           {
@@ -485,7 +481,7 @@ const fr = {
             image: "/images/fabrication/disques-flasques-usines.jpg",
           },
           {
-            name: "Flasque de réducteur en aluminium",
+            name: "Flasques mécano-soudées",
             image: "/images/fabrication/flasque-reducteur-alu.jpg",
           },
           {
@@ -498,12 +494,8 @@ const fr = {
         name: "Fabrication sur plan",
         items: [
           {
-            name: "Plan technique du client",
-            image: "/images/fabrication/plan-moyeu-bride.jpg",
-          },
-          {
-            name: "Moyeu à bride avec pignon hélicoïdal, fabriqué d'après ce plan",
-            image: "/images/fabrication/moyeu-bride-pignon.jpg",
+            name: "Pièce fabriquée d'après ce plan",
+            images: ["/images/fabrication/plan-moyeu-bride.jpg", "/images/fabrication/moyeu-bride-pignon.jpg"],
           },
           {
             name: "Pièce usinée conforme au dessin",
@@ -527,11 +519,7 @@ const fr = {
             image: "/images/fabrication/ensemble-assemble.jpg",
           },
           {
-            name: "Disques à fentes pour scie",
-            image: "/images/fabrication/disques-fentes.jpg",
-          },
-          {
-            name: "Billettes de placage",
+            name: "Clads",
             image: "/images/fabrication/billettes-placage.jpg",
           },
         ],
@@ -559,10 +547,6 @@ const fr = {
             name: "Fraiseuse — taillage de pignons",
             image: "/images/fabrication/fraiseuse-atelier.jpg",
           },
-          {
-            name: "Fraise à surfacer à plaquettes carbure",
-            image: "/images/fabrication/fraise-surfacer.jpg",
-          },
         ],
       },
     ],
@@ -570,7 +554,7 @@ const fr = {
     processSteps: [
       {
         title: "1. Vous nous contactez",
-        desc: "Apportez la pièce à l'atelier, ou envoyez une photo ou votre plan par WhatsApp.",
+        desc: "Apportez la pièce à l'atelier, ou envoyez une photo ou votre plan par email ou WhatsApp.",
       },
       {
         title: "2. Devis rapide",
@@ -578,7 +562,7 @@ const fr = {
       },
       {
         title: "3. Fabrication",
-        desc: "Usinage sur tour et fraiseuse, contrôle des cotes à chaque étape.",
+        desc: "Fabrication avec contrôle qualité à chaque étape.",
       },
       {
         title: "4. Livraison",
@@ -611,7 +595,7 @@ const en: typeof fr = {
   nav: {
     home: "Home",
     services: "Services",
-    products: "Machining & fabrication",
+    products: "Machining & mechanical fabrication",
     about: "About",
     blog: "Blog",
     contact: "Contact",
@@ -918,13 +902,13 @@ const en: typeof fr = {
       {
         name: "MIG torch consumables",
         desc: "Contact tips, gas nozzles, tip holders, ceramic diffusers and swan necks for MIG/MAG torches.",
-        image: "/images/product-consommables-torche.jpg",
+        image: "/images/product-consommables-torches.jpg",
         category: "Welding",
       },
     ],
   },
   fabricationPage: {
-    title: "Machining & metal fabrication",
+    title: "Machining & mechanical fabrication",
     subtitle:
       "Bring the worn or broken part… or your drawing. We machine the new part, made to measure, in our Edea workshop.",
     heroImage: "/images/fabrication/vis-sans-fin-avant-apres.jpg",
@@ -1083,7 +1067,7 @@ const en: typeof fr = {
             image: "/images/fabrication/disques-flasques-usines.jpg",
           },
           {
-            name: "Aluminum gearbox flange",
+            name: "Mechanically welded flanges",
             image: "/images/fabrication/flasque-reducteur-alu.jpg",
           },
           {
