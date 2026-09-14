@@ -319,7 +319,7 @@ const fr = {
       },
       {
         name: "Consommables de torche MIG",
-        desc: "Tubes contact, buses de gaz, supports de tube, diffuseurs céramique et cols de cygne pour torches MIG/MAG.",
+        desc: "Buses de gaz, supports de tube contact et diffuseurs céramique pour torches MIG/MAG.",
         image: "/images/product-consommables-torche.jpg",
         category: "Soudure",
       },
@@ -917,7 +917,7 @@ const en: typeof fr = {
       },
       {
         name: "MIG torch consumables",
-        desc: "Contact tips, gas nozzles, tip holders, ceramic diffusers and swan necks for MIG/MAG torches.",
+        desc: "Gas nozzles, contact tip holders and ceramic diffusers for MIG/MAG torches.",
         image: "/images/product-consommables-torche.jpg",
         category: "Welding",
       },
