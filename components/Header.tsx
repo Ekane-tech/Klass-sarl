@@ -71,7 +71,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2.5" aria-label="Klass Sarl — Accueil">
             <Logo className="h-10 w-10" />
             <span className="font-display text-lg font-bold tracking-tight text-ink-900">
-              Klass<span className="text-brand-600"> Sarl</span>
+              Klass<span className="text-red-500"> Sarl</span>
             </span>
           </Link>
 
