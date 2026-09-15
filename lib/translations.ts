@@ -86,10 +86,10 @@ const fr = {
       subtitle: "Nous choisissons la technique adaptée à chaque projet et à chaque matériau pour garantir un résultat optimal.",
       items: [
         {
-          icon: "zap",
-          title: "Soudure à l'arc (électrode enrobée)",
-          desc: "Technique robuste et polyvalente, idéale pour les portails, grilles, barreaux et structures métalliques, même en extérieur.",
-          tags: ["Portails", "Grilles", "Structures"],
+          icon: "plug-zap",
+          title: "Soudure TIG (argon)",
+          desc: "La technique la plus précise, sous gaz argon, pour l'inox, l'aluminium et les finitions soignées de garde-corps et mobilier métallique.",
+          tags: ["Inox", "Aluminium", "Précision"],
         },
         {
           icon: "flame",
@@ -98,10 +98,10 @@ const fr = {
           tags: ["Acier", "Fabrication", "Finition propre"],
         },
         {
-          icon: "plug-zap",
-          title: "Soudure TIG (argon)",
-          desc: "La technique la plus précise, sous gaz argon, pour l'inox, l'aluminium et les finitions soignées de garde-corps et mobilier métallique.",
-          tags: ["Inox", "Aluminium", "Précision"],
+          icon: "zap",
+          title: "Soudure à l'arc (électrode enrobée)",
+          desc: "Technique robuste et polyvalente, idéale pour les portails, grilles, barreaux et structures métalliques, même en extérieur.",
+          tags: ["Portails", "Grilles", "Structures"],
         },
       ],
     },
@@ -672,10 +672,10 @@ const en: typeof fr = {
       subtitle: "We choose the right technique for each project and material to ensure optimal results.",
       items: [
         {
-          icon: "zap",
-          title: "Arc welding (stick electrode)",
-          desc: "Robust and versatile technique, ideal for gates, grilles, bars and metal structures, even outdoors.",
-          tags: ["Gates", "Grilles", "Structures"],
+          icon: "plug-zap",
+          title: "TIG welding (argon)",
+          desc: "The most precise technique, under argon gas, for stainless steel, aluminum and refined finishes of railings and metal furniture.",
+          tags: ["Stainless", "Aluminum", "Precision"],
         },
         {
           icon: "flame",
@@ -684,10 +684,10 @@ const en: typeof fr = {
           tags: ["Steel", "Fabrication", "Clean finish"],
         },
         {
-          icon: "plug-zap",
-          title: "TIG welding (argon)",
-          desc: "The most precise technique, under argon gas, for stainless steel, aluminum and refined finishes of railings and metal furniture.",
-          tags: ["Stainless", "Aluminum", "Precision"],
+          icon: "zap",
+          title: "Arc welding (stick electrode)",
+          desc: "Robust and versatile technique, ideal for gates, grilles, bars and metal structures, even outdoors.",
+          tags: ["Gates", "Grilles", "Structures"],
         },
       ],
     },
