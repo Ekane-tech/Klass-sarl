@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { company } from "@/lib/translations";
@@ -17,6 +18,32 @@ import {
 export function FabricationContent() {
   const { t } = useI18n();
   const f = t.fabricationPage;
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Scroll immediately
+    scrollToHash();
+
+    // Also scroll after a short delay to ensure DOM is ready
+    const timeoutId = setTimeout(scrollToHash, 100);
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", scrollToHash);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("hashchange", scrollToHash);
+    };
+  }, []);
 
   return (
     <>
