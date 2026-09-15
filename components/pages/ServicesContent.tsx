@@ -159,7 +159,7 @@ export function ServicesContent() {
             <p className="mt-2 max-w-xl text-brand-50">{t.services.productsTeaser.subtitle}</p>
           </div>
           <Link
-            href="/products"
+            href="/products#pieces-de-rechange"
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand-700 transition hover:bg-brand-50"
           >
             {t.services.productsTeaser.cta}
