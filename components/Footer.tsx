@@ -34,7 +34,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2.5">
               <Logo className="h-10 w-10" />
               <span className="font-display text-lg font-bold text-white">
-                Klass<span className="text-red-500"> Sarl</span>
+                Klass<span className="text-brand-400"> Sarl</span>
               </span>
             </Link>
             <p className="mt-4 text-sm leading-6">{t.footer.about}</p>
