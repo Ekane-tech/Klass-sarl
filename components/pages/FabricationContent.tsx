@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { company } from "@/lib/translations";
@@ -17,6 +18,32 @@ import {
 export function FabricationContent() {
   const { t } = useI18n();
   const f = t.fabricationPage;
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Scroll immediately
+    scrollToHash();
+
+    // Also scroll after a short delay to ensure DOM is ready
+    const timeoutId = setTimeout(scrollToHash, 100);
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", scrollToHash);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("hashchange", scrollToHash);
+    };
+  }, []);
 
   return (
     <>
@@ -140,17 +167,38 @@ export function FabricationContent() {
               </FadeIn>
               <StaggerContainer className="mt-5 grid grid-cols-2 items-stretch gap-4 sm:gap-6 lg:grid-cols-4">
                 {family.items.map((item) => (
-                  <StaggerItem key={item.image} className="h-full">
+                  <StaggerItem key={item.image || item.images?.[0]} className="h-full">
                     <HoverLift className="h-full">
                       <figure className="flex h-full flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm">
-                        <Img
-                          src={item.image}
-                          alt={item.name}
-                          aspect="1/1"
-                          sizes="(min-width: 1024px) 25vw, 50vw"
-                          className="bg-ink-100"
-                          imgClassName="object-contain"
-                        />
+                        {item.images ? (
+                          <div className="grid grid-rows-2 h-full">
+                            <Img
+                              src={item.images[0]}
+                              alt={`${item.name} - image 1`}
+                              aspect="2/1"
+                              sizes="(min-width: 1024px) 12.5vw, 25vw"
+                              className="bg-ink-100"
+                              imgClassName="object-cover"
+                            />
+                            <Img
+                              src={item.images[1]}
+                              alt={`${item.name} - image 2`}
+                              aspect="2/1"
+                              sizes="(min-width: 1024px) 12.5vw, 25vw"
+                              className="bg-ink-100"
+                              imgClassName="object-cover"
+                            />
+                          </div>
+                        ) : (
+                          <Img
+                            src={item.image}
+                            alt={item.name}
+                            aspect="1/1"
+                            sizes="(min-width: 1024px) 25vw, 50vw"
+                            className="bg-ink-100"
+                            imgClassName="object-contain"
+                          />
+                        )}
                         <figcaption className="flex flex-1 items-center p-3 text-xs font-medium leading-5 text-ink-700 sm:p-4 sm:text-sm">
                           {item.name}
                         </figcaption>

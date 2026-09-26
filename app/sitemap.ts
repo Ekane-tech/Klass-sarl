@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { posts } from "@/lib/posts";
 
 const siteUrl =
-  process.env.SITE_URL || "https://klass-sarl.vercel.app";
+  process.env.SITE_URL || "https://klasssarl.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
