@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { HomeContent } from "@/components/pages/HomeContent";
 
 export const metadata: Metadata = {
-  title: "Klass Sarl — Pressing & Métallerie à Edéa, Cameroun",
+  title: "Klass Sarl — Atelier de métallerie & soudure à Edéa, Cameroun",
   description:
-    "Klass Sarl à Edéa (Littoral, Cameroun) : Klass Pressing pour l'entretien du linge et un atelier de métallerie, soudure, portails, garde-corps et structures métalliques sur mesure.",
+    "Klass Sarl, atelier de métallerie à Edéa (Littoral, Cameroun) : soudure, usinage, portails, garde-corps, structures métalliques sur mesure et pièces de rechange. Également Klass Pressing à Edéa pour l'entretien du linge.",
 };
 
 export default function HomePage() {

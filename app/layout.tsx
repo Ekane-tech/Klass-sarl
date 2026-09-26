@@ -8,7 +8,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "https://klasssarl.com"),
+  metadataBase: new URL(process.env.SITE_URL || "https://www.klasssarl.com"),
   title: {
     default: "Klass Sarl — Métallerie & Soudure à Edéa",
     template: "%s — Klass Sarl",
@@ -56,6 +56,9 @@ export const metadata: Metadata = {
       "Métallerie, soudure, portails, structures métalliques sur mesure et pièces de rechange à Edéa, Cameroun. Également Klass Pressing.",
     images: ["/images/og-logo.jpg"],
   },
+  alternates: {
+    canonical: "./",
+  },
   robots: {
     index: true,
     follow: true,
@@ -84,10 +87,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressRegion: "Littoral",
       addressCountry: "CM",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 3.8028,
+      longitude: 10.1268,
+    },
     areaServed: "Littoral, Cameroun",
     openingHours: "Mo-Sa 07:30-19:00",
     priceRange: "$$",
-    url: process.env.SITE_URL || "https://klasssarl.com",
+    url: process.env.SITE_URL || "https://www.klasssarl.com",
+    image: `${process.env.SITE_URL || "https://www.klasssarl.com"}/images/og-logo.jpg`,
+    keywords:
+      "atelier de métallerie Edéa, soudure Edéa, usinage Edéa, klass pressing Edéa, portails, structures métalliques, Cameroun",
+    department: {
+      "@type": "DryCleaningOrLaundry",
+      name: "Klass Pressing",
+      telephone: company.pressingPhone,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Edéa",
+        addressRegion: "Littoral",
+        addressCountry: "CM",
+      },
+    },
   };
 
   return (

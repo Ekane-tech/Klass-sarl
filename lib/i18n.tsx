@@ -31,8 +31,9 @@ function readLang(): Lang {
   } catch {
     /* ignore */
   }
-  const nav = window.navigator.language || "";
-  if (nav.toLowerCase().startsWith("en")) return "en";
+  // Always default to French (site's primary audience & SEO language).
+  // Auto-detecting navigator.language made crawlers (Googlebot = en-US)
+  // index the English content for a French-speaking audience.
   return defaultLang;
 }
 
