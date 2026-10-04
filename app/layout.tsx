@@ -1,80 +1,97 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { I18nProvider } from "@/lib/i18n";
 import { company } from "@/lib/translations";
+import { translations } from "@/lib/translations";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "https://klasssarl.com"),
-  title: {
-    default: "Klass Sarl — Métallerie & Soudure à Edéa",
-    template: "%s — Klass Sarl",
-  },
-  description:
-    "Klass Sarl à Edéa (Littoral, Cameroun) : atelier de métallerie — soudure, portails, garde-corps, structures métalliques sur mesure et pièces de rechange. Également Klass Pressing pour l'entretien du linge.",
-  keywords: [
-    "Klass Sarl",
-    "métallerie Edéa",
-    "soudure Cameroun",
-    "atelier soudure Edéa",
-    "portail Edéa",
-    "garde-corps",
-    "barreaux",
-    "structures métalliques",
-    "pièces de rechange Edéa",
-    "ALUCAM",
-    "pressing Edéa",
-    "repassage",
-    "Littoral Cameroun",
-  ],
-  authors: [{ name: company.name }],
-  openGraph: {
-    type: "website",
-    locale: "fr_FR",
-    alternateLocale: "en_US",
-    url: "/",
-    siteName: company.name,
-    title: "Klass Sarl — Métallerie & Soudure à Edéa",
-    description:
-      "Métallerie, soudure, portails, structures métalliques sur mesure et pièces de rechange à Edéa, Cameroun. Également Klass Pressing.",
-    images: [
-      {
-        url: "/images/og-logo.jpg",
-        width: 800,
-        height: 800,
-        alt: "Klass Sarl — Métallerie & Soudure à Edéa",
-      },
+function getLanguageFromHeaders(): "fr" | "en" {
+  try {
+    const headersList = headers();
+    const acceptLanguage = headersList.get("accept-language") || "";
+    if (acceptLanguage.toLowerCase().startsWith("en")) return "en";
+  } catch {
+    /* ignore */
+  }
+  return "fr";
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const lang = getLanguageFromHeaders();
+  const t = translations[lang];
+
+  return {
+    metadataBase: new URL(process.env.SITE_URL || "https://klasssarl.com"),
+    title: {
+      default: t.meta.title,
+      template: `%s — Klass Sarl`,
+    },
+    description: t.meta.description,
+    keywords: [
+      "Klass Sarl",
+      "métallerie Edéa",
+      "soudure Cameroun",
+      "atelier soudure Edéa",
+      "portail Edéa",
+      "garde-corps",
+      "barreaux",
+      "structures métalliques",
+      "pièces de rechange Edéa",
+      "ALUCAM",
+      "pressing Edéa",
+      "repassage",
+      "Littoral Cameroun",
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Klass Sarl — Métallerie & Soudure à Edéa",
-    description:
-      "Métallerie, soudure, portails, structures métalliques sur mesure et pièces de rechange à Edéa, Cameroun. Également Klass Pressing.",
-    images: ["/images/og-logo.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    authors: [{ name: company.name }],
+    openGraph: {
+      type: "website",
+      locale: lang === "fr" ? "fr_FR" : "en_US",
+      alternateLocale: lang === "fr" ? "en_US" : "fr_FR",
+      url: "/",
+      siteName: company.name,
+      title: t.meta.title,
+      description: t.meta.description,
+      images: [
+        {
+          url: "/images/og-logo.jpg",
+          width: 800,
+          height: 800,
+          alt: t.meta.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.meta.title,
+      description: t.meta.description,
+      images: ["/images/og-logo.jpg"],
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
-  },
-};
+  };
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const lang = getLanguageFromHeaders();
+  const t = translations[lang];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: company.name,
-    description:
-      "Atelier de métallerie à Edéa : soudure, portails, garde-corps, structures métalliques et pièces de rechange. Également Klass Pressing pour l'entretien du linge.",
+    description: t.meta.description,
     email: company.email,
     telephone: company.phones[0],
     address: {
@@ -91,7 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="fr" className="antialiased" data-scroll-behavior="smooth">
+    <html lang={lang} className="antialiased" data-scroll-behavior="smooth">
       <body className="flex min-h-screen flex-col">
         <script
           type="application/ld+json"
