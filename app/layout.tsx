@@ -9,9 +9,9 @@ import { PageTransition } from "@/components/PageTransition";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
 
-function getLanguageFromHeaders(): "fr" | "en" {
+async function getLanguageFromHeaders(): Promise<"fr" | "en"> {
   try {
-    const headersList = headers();
+    const headersList = await headers();
     const acceptLanguage = headersList.get("accept-language") || "";
     if (acceptLanguage.toLowerCase().startsWith("en")) return "en";
   } catch {
@@ -21,7 +21,7 @@ function getLanguageFromHeaders(): "fr" | "en" {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const lang = getLanguageFromHeaders();
+  const lang = await getLanguageFromHeaders();
   const t = translations[lang];
 
   return {
@@ -84,7 +84,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const lang = getLanguageFromHeaders();
+  // Default to French for server-side rendering
+  // Client-side I18nProvider will handle actual language detection
+  const lang: "fr" | "en" = "fr";
   const t = translations[lang];
 
   const jsonLd = {
